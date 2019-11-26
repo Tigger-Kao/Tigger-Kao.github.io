@@ -1,0 +1,453 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體";
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 340;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+p {
+  font-size: 1em;
+  line-height: 35px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+a {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  opacity: 0.8;
+  background-color: black;
+  padding: 16px;
+}
+
+nav .logoText {
+  margin-left: 40px;
+}
+
+nav .logoText .logo {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+nav .logoText .text {
+  margin-left: 40px;
+}
+
+nav .navList .navbar-nav {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1300px) {
+  nav .navList .navbar-nav {
+    width: 500px;
+  }
+}
+
+nav .navList .navbar-nav .nav-item {
+  font-size: 15px;
+}
+
+.bannerContainer {
+  position: relative;
+}
+
+.bannerContainer .video-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.bannerContainer .title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(0, -55%);
+          transform: translate(0, -55%);
+}
+
+.bannerContainer .title p {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+.section1 {
+  padding: 270px 0 150px 0;
+  background-image: url(./img/bg-leftImg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+@media screen and (max-width: 1300px) {
+  .section1 {
+    padding: 50px 0 150px 0;
+  }
+}
+
+.section1 .container-fluid {
+  width: 84%;
+  height: auto;
+}
+
+.section1 .container-fluid .row .img {
+  background-image: url(./img/台北市艋舺龍山寺.jpg);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30%;
+  padding: 0;
+  margin-bottom: 62px;
+}
+
+.section1 .container-fluid .row .text-group {
+  padding-left: 140px;
+  padding-right: 35px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section1 .container-fluid .row .text-group {
+    padding-left: 0;
+  }
+}
+
+.section1 .container-fluid .row .text-group h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+}
+
+.section2 {
+  padding-top: 100px;
+  background-image: url(./img/bg-rightImg.jpg);
+  background-size: 11%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 1%;
+}
+
+.section2 .container-fluid {
+  width: 100%;
+}
+
+.section2 .container-fluid .row {
+  margin-right: 7rem;
+}
+
+.section2 .container-fluid .row .img {
+  padding: 0;
+}
+
+.section2 .container-fluid .row .img .imgUp {
+  width: 103%;
+}
+
+.section2 .container-fluid .row .text-group {
+  padding-left: 3.5rem;
+  padding-right: 1.5rem;
+}
+
+.section2 .container-fluid .row .text-group h3 {
+  margin-bottom: 95px;
+}
+
+.section2 .container-fluid .row .text-group h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+}
+
+.section2 .container-fluid .row .text-group .img {
+  width: 100%;
+  height: 350px;
+  background-image: url(./img/img-section2right.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.section34 {
+  width: 100%;
+  height: auto;
+  background-image: url(./img/紙質質感.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section34 .section3 {
+  height: 1000px;
+  padding: 180px 0;
+}
+
+.section34 .section3 .container-fluid {
+  width: 65%;
+}
+
+.section34 .section3 .container-fluid .title {
+  padding-bottom: 180px;
+}
+
+.section34 .section3 .container-fluid .title h3 {
+  letter-spacing: 0.5rem;
+  font-size: 30px;
+}
+
+.section34 .section3 .container-fluid .title h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+}
+
+.section34 .section4 {
+  position: relative;
+}
+
+.section34 .section4 .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.section34 .section4 .container-fluid .backImg {
+  width: 100%;
+  height: 52vh;
+  position: relative;
+  background-image: url(./img/bg-leftImgSection4.png);
+  background-repeat: no-repeat;
+  background-size: 53%;
+}
+
+@media screen and (max-width: 1200px) {
+  .section34 .section4 .container-fluid .backImg {
+    height: 30vh;
+  }
+}
+
+.section34 .section4 .container-fluid .backImg h3 {
+  letter-spacing: 10px;
+  font-size: 30px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+.section34 .section4 .container-fluid .backImg h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+}
+
+.section34 .section4 .container-fluid .mask {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section34 .section4 .container-fluid .mask:hover {
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+}
+
+.section34 .section4 .container-fluid .mask .row {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section34 .section4 .container-fluid .mask .row:hover {
+  opacity: 0.5;
+}
+
+.section34 .section4 .container-fluid .mask .row .textGroup {
+  padding: 0 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section34 .section4 .container-fluid .mask .row .textGroup {
+    padding: 0 30px;
+  }
+}
+
+.section34 .section4 .container-fluid .mask .row .textGroup h4 {
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .section34 .section4 .container-fluid .mask .row .textGroup p {
+    line-height: 25px;
+  }
+}
+
+.section34 .section4 .container-fluid .mask .row .imgT {
+  padding: 0;
+}
+
+.section34 .section4 .container-fluid .mask .row .imgT .img {
+  background-image: url(./img/竹籤及籤文.jpg);
+  width: 100%;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section34 .section4 .container-fluid .mask .row .imgB {
+  padding: 0;
+}
+
+.section34 .section4 .container-fluid .mask .row .imgB .img {
+  background-image: url(./img/擲茭.jpg);
+  width: 100%;
+  height: 460px;
+  background-size: 130%;
+  background-position: center;
+  background-position-x: 70%;
+  background-position-y: 48%;
+}
+
+.section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.section5 .backimg {
+  z-index: 99;
+  width: 20%;
+  height: 280px;
+  position: relative;
+  background-image: url(./img/157414743357485.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+
+.section5 .backimg span {
+  position: absolute;
+  top: 110%;
+  right: 30%;
+}
+
+.section5 .container-fluid {
+  width: 100%;
+  z-index: 1;
+  margin-right: 4%;
+}
+
+.section5 .container-fluid .row {
+  position: relative;
+}
+
+.section5 .container-fluid .row .textBox {
+  z-index: 99;
+}
+
+.section5 .container-fluid .row .textBox .backImg {
+  background-image: url(./img/台北市艋舺龍山寺.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask {
+  background-color: rgba(14, 14, 14, 0);
+  padding: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask {
+    padding: 50px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask:hover {
+  background-color: rgba(14, 14, 14, 0.61);
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text {
+  color: white;
+  opacity: 0;
+  padding: 20px;
+  border: #fdfdfd solid 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask .text {
+    padding: 50px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text hr {
+  background-color: white;
+  width: 30%;
+  height: 2px;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text .ellipsis {
+  text-align: justify;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text:hover {
+  opacity: 1;
+}
+
+.section5 .container-fluid .row::before {
+  content: "";
+  width: 100%;
+  height: 550px;
+  background-color: #222222;
+  z-index: 1;
+  position: absolute;
+  right: 95%;
+  top: -15%;
+}
+
+.section6 {
+  background-color: #242424;
+}
+/*# sourceMappingURL=index.css.map */
