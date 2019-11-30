@@ -1,0 +1,575 @@
+$custom-gutter-width: 70px;
+
+* {
+  font-family: "微軟正黑體";
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 340;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1em;
+  }
+}
+
+// p {
+//   font-size: 1em;
+//   line-height: 35px;
+//   text-align: justify;
+//   font-weight: 500;
+// }
+
+a {
+  color: white;
+  margin: 0;
+}
+
+// navbar
+.container-fluid {
+  width: 100%;
+  nav {
+    opacity: 0.8;
+    background-color: rgb(31, 29, 29);
+
+    .navbar-brand {
+      padding: 12px;
+      margin-left: 3rem;
+      align-items: center;
+
+      @media screen and (max-width: 991px) {
+        margin-left: 0;
+        padding: 0;
+      }
+    }
+
+    .navList {
+      .navbar-nav {
+        width: 980px;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 1300px) {
+          max-width: 25rem;
+        }
+
+        .nav-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// banner
+.bannerContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/XlgcYnepmBFxYIldYcldNeYyz.jpg);
+  background-size: cover;
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: relative;
+
+    .title {
+      font-family: "Noto Serif TC", serif;
+      font-size: 7rem;
+      position: absolute;
+      top: 40%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 1024px) {
+        font-size: 5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .textBox {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%;
+      position: absolute;
+      top: 55%;
+      left: 10%;
+      margin-top: 5rem;
+
+      @media screen and (max-width: 1039px) {
+        width: 100%;
+        left: 0%;
+      }
+
+      @media screen and (max-width: 924px) {
+        margin-top: 1rem;
+      }
+
+      .textLeft {
+        // margin-right: 14rem;
+        text-align: center;
+        letter-spacing: 15px;
+        line-height: 5rem;
+      }
+
+      .textRight {
+        font-size: 1.3rem;
+        width: 40%;
+        line-height: 3rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 1px;
+          height: 100px;
+          background-color: white;
+          position: absolute;
+          right: 120%;
+          top: 28%;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      cursor: pointer;
+      position: relative;
+
+      @media screen and (max-width: 779px) {
+        position: absolute;
+        top: 88%;
+      }
+
+      @media screen and (max-width: 519px) {
+        position: absolute;
+        top: 92%;
+      }
+
+      &::before {
+        content: "";
+        height: 3px;
+        width: 0rem;
+        background-color: rgb(212, 88, 0);
+        position: absolute;
+        top: 18%;
+        left: 46.5%;
+        transition: 1s;
+      }
+
+      &:hover::before {
+        content: "";
+        height: 3px;
+        width: 3.5rem;
+        background-color: rgb(212, 88, 0);
+        position: absolute;
+        top: 18%;
+        left: 46.5%;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin: 0;
+        letter-spacing: 15px;
+      }
+
+      .arrowButton {
+        font-weight: 100;
+        font-size: 6rem;
+
+        @media screen and (max-width: 519px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.section1 {
+  // 過渡背景色
+  width: 100%;
+  height: 13rem;
+  background-color: white;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    height: 0rem;
+  }
+
+  // 留言視窗
+  .modal-lg {
+    margin-top: 50px;
+
+    .formBox {
+      z-index: 80;
+      background-color: white;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0);
+      border-radius: 2px;
+      box-shadow: 0 0 1em rgb(54, 54, 54);
+
+      @media screen and (max-width: 768px) {
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .textBox {
+        width: 100%;
+        padding: 3rem;
+
+        .title {
+          font-size: 1.5rem;
+          letter-spacing: 10px;
+          position: relative;
+
+          @media screen and (max-width: 991px) {
+            margin-bottom: 1.5rem;
+
+            // &::after{
+            //   content: "";
+            //   width: 8.5rem;
+            //   height: 1px;
+            //   background-color: black;
+            //   position: absolute;
+            //   top: 100%;
+            //   left: 30%;
+            // }
+          }
+        }
+
+        hr {
+          background-color: black;
+        }
+
+        .row {
+          .uploadImg {
+            justify-content: flex-end;
+            display: flex;
+
+            @media screen and (max-width: 1023px) {
+              display: none;
+            }
+          }
+
+          .rating {
+            // 評分
+            font-size: 0;
+            display: table;
+          }
+
+          .rating > label {
+            color: #ddd;
+            float: right;
+
+            @media screen and (max-width: 768px) {
+              color: rgb(170, 170, 170);
+            }
+          }
+
+          .rating > label:before {
+            padding: 0 5px;
+            font-size: 30px;
+            content: "★";
+          }
+
+          .rating > input:checked ~ label,
+          .rating:not(:checked) > label:hover,
+          .rating:not(:checked) > label:hover ~ label {
+            color: #000000;
+          }
+        }
+
+        .btnEnd {
+          width: 5rem;
+          margin-left: auto;
+          display: block;
+
+          @media screen and (max-width: 1023px) {
+            display: none;
+          }
+        }
+
+        .btn_group {
+          display: none;
+
+          @media screen and (max-width: 1023px) {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section2 {
+  .container-fluid {
+    width: 100%;
+    height: auto;
+    background-image: url(./img/紙質質感.jpg);
+    background-size: cover;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0px;
+    }
+
+    .textBox {
+      transform: translate(0, -5%);
+      z-index: 99;
+      max-width: 60%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      @media screen and (max-width: 1024px) {
+        min-width: 100%;
+        transform: translate(0);
+      }
+
+      .backImg {
+        width: 30%;
+        background-image: url(./img/台北市艋舺龍山寺.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        position: relative;
+      
+        @media screen and (max-width: 1024px) {
+          width: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          margin-bottom: 0rem;
+        }
+
+        .mask {
+          background-color: rgba(14, 14, 14, 0);
+          padding: 20px;
+          transition: 1s;
+
+          &:hover {
+            background-color: rgba(14, 14, 14, 0.61);
+
+            @media screen and (max-width: 768px) {
+              background-color: rgba(14, 14, 14, 0);
+              transition: none;
+            }
+          }
+
+          .text {
+            color: white;
+            opacity: 0;
+            padding: 20px;
+            border: rgb(253, 253, 253) solid 1px;
+            transition: 1s;
+
+            @media screen and (max-width: 768px) {
+              border: rgba(253, 253, 253, 0) solid 1px;
+              color: rgba(255, 255, 255, 0);
+            }
+
+            hr {
+              background-color: white;
+              width: 30%;
+              height: 2px;
+            }
+
+            .ellipsis {
+              text-align: justify;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 3; //行數
+              -webkit-box-orient: vertical;
+              white-space: normal;
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          &:hover::before {
+            content: "萬華艋舺龍山寺";
+            width: 100%;
+            height: 45%;
+            background-color: rgba(0, 0, 0, 0.74);
+            position: absolute;
+            bottom: 0;
+            color: white;
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-family: "Noto Serif TC", serif;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      // 分頁按鈕
+      position: relative;
+      padding-bottom: 5rem;
+      margin: auto;
+      width: fit-content;
+
+      a {
+        position: relative;
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 8px 16px 10px;
+        text-decoration: none;
+
+        &::before {
+          z-index: -1;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          content: "";
+          top: 0;
+          left: 0;
+          background-color: black;
+          border-radius: 24px;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          transition: all 0.2s;
+        }
+
+        &:hover,
+        .pagination-active {
+          color: #fff;
+          z-index: 9;
+        }
+
+        &:hover::before,
+        .pagination-active::before {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+      .pagination-active {
+        color: #fff;
+        z-index: 9;
+
+        &:before {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .modal-experience {
+    // 評分呈現
+    .formBox {
+      z-index: 1300;
+      background-color: white;
+      width: 100%;
+      border-radius: 2px;
+      box-shadow: 0 0 1em rgb(54, 54, 54);
+
+      .form {
+        width: 100%;
+        padding: 3rem;
+
+        .title {
+          font-size: 1.5rem;
+          letter-spacing: 10px;
+        }
+
+        hr {
+          background-color: black;
+        }
+
+        img {
+          width: inherit;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        // 評分呈現
+        .star-rating {
+          unicode-bidi: bidi-override;
+          color: #ddd;
+          font-size: 0;
+          margin: 0 auto;
+          position: relative;
+          display: table;
+          padding-bottom: 1rem;
+          text-shadow: 0px 1px 0 #a2a2a2;
+
+          span {
+            padding: 5px;
+            font-size: 20px;
+          }
+        }
+
+        .star-rating-top {
+          color: rgb(0, 0, 50);
+          padding: 0;
+          position: absolute;
+          z-index: 1;
+          display: block;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .star-rating-bottom {
+          padding: 0;
+          display: block;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
+
+.section3 {
+  background-color: rgb(36, 36, 36);
+}

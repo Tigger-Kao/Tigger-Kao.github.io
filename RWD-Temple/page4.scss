@@ -1,0 +1,579 @@
+$custom-gutter-width: 70px;
+
+* {
+  font-family: "微軟正黑體";
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 340;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1em;
+  }
+}
+
+// p {
+//   font-size: 1em;
+//   line-height: 35px;
+//   text-align: justify;
+//   font-weight: 500;
+// }
+
+a {
+  color: white;
+  margin: 0;
+}
+
+// navbar
+.container-fluid {
+  width: 100%;
+
+  nav {
+    opacity: 0.8;
+    background-color: rgb(31, 29, 29);
+
+    .navbar-brand {
+      padding: 12px;
+      margin-left: 3rem;
+
+      .logoText {
+        margin-left: 2rem;
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-left: 0;
+        padding: 0;
+
+        .logoText {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .navList {
+      .navbar-nav {
+        width: 980px;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 1300px) {
+          max-width: 25rem;
+        }
+
+        .nav-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// banner
+.bannerContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/古蹟修復pro.png);
+  background-size: cover;
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: relative;
+
+    .textRightTop {
+      display: none;
+    }
+
+    .title {
+      font-family: "Noto Serif TC", serif;
+      font-size: 7rem;
+      position: absolute;
+      top: 40%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width: 1024px) {
+        font-size: 5rem;
+      }
+
+      // @media screen and (max-width: 768px) {
+      //   font-size: 2.5rem;
+      // }
+    }
+
+    .textBox {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      margin-top: 5rem;
+
+      .textLeft {
+        // margin-right: 14rem;
+        text-align: center;
+        letter-spacing: 10px;
+        line-height: 5rem;
+      }
+
+      .textRight {
+        font-size: 1.3rem;
+        width: 40%;
+        line-height: 3rem;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      font-weight: 100;
+      font-size: 6rem;
+    }
+  }
+}
+
+.section1 {
+  width: 100%;
+  height: 15rem;
+  background-color: white;
+  border-bottom: black solid 1px;
+
+  .donation {
+    position: relative;
+    transform: translate(50%, 50%);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+
+    img {
+      max-width: 50%;
+      z-index: 998;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -10%);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      z-index: 1;
+      position: absolute;
+      right: 50%;
+    }
+  }
+}
+
+.section2 {
+  .container-fluid {
+    width: 100%;
+    height: auto;
+    background-image: url(./img/紙質質感.jpg);
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+
+    .img {
+      width: 20%;
+      margin: 0 auto;
+      padding-top: 350px;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        background-color: black;
+        width: 1px;
+        height: 150px;
+        position: absolute;
+        right: 50%;
+        top: 25%;
+      }
+    }
+
+    .donatForm {
+      width: 50%;
+      margin: auto;
+      margin-top: 6rem;
+      padding: 50px;
+      background-color: white;
+      border: black solid 2px;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+        width: 90%;
+        padding: 1.5rem;
+      }
+
+      @media screen and (max-width: 420px) {
+        padding-bottom: 7rem;
+      }
+
+      form {
+        .title {
+          text-align: center;
+          font-size: 28px;
+          letter-spacing: 10px;
+          margin-bottom: 3rem;
+        }
+
+        .form-group {
+          letter-spacing: 10px;
+
+          // 1920px 選擇鈕
+          .radio-tile-group {
+            display: flex;
+            // flex-wrap: wrap;
+            // justify-content: flex-start;
+
+            //set dimensions for invisible container
+            .input-container {
+              position: relative;
+              margin: 0.5rem;
+
+              //make actual radio input invisible
+              // + stretch to fill container
+              .radio-button {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                cursor: pointer;
+              }
+
+              //default tile styles
+              .radio-tile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 0.5rem;
+                transition: transform 300ms ease;
+              }
+
+              .radio-tile-label {
+                text-align: center;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 0px;
+                color: black;
+              }
+
+              //active tile styles
+              .radio-button:checked+.radio-tile {
+                background-color: black;
+                border: 2px solid black;
+                color: white;
+                transform: scale(1.1, 1.1);
+
+                .radio-tile-label {
+                  color: white;
+                  background-color: black;
+                }
+              }
+            }
+          }
+
+          // 768px 捐款類型 選擇鈕
+          .radio-tile-group {
+
+            label {
+              display: block;
+              margin: 4px 0;
+            }
+
+            input[type="radio"] {
+              transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+              -webkit-appearance: none;
+              background-color: #fff;
+              border: 2px solid #000;
+              border-radius: 100%;
+              cursor: pointer;
+              display: inline-block;
+              height: 16px;
+              position: relative;
+              outline: none;
+              width: 16px;
+              vertical-align: text-bottom;
+
+              &:after {
+                transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+                transform: scale(0);
+                background-color: #fff;
+                border-radius: 50%;
+                content: "";
+                height: 16px;
+                left: -2px;
+                position: absolute;
+                pointer-events: none;
+                top: -2px;
+                transform-origin: 50% 50%;
+                overflow: hidden;
+                width: 16px;
+              }
+
+              &:checked:after {
+                transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+                -webkit-transform: scale(0.5);
+                background-color: #000;
+                border-color: #000;
+                transform: scale(0.5);
+              }
+            }
+          }
+
+          // 768px 捐款頻率 選單
+          .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            // margin: 10px 10px;
+          }
+
+          .custom-dropdown select {
+            background-color: #ffffff;
+            color: black;
+            font-size: inherit;
+            // padding: .5em;
+            padding: .4rem 6rem .4rem 1rem;
+            border: black 1px solid;
+            margin: 0;
+            border-radius: 3px;
+            // text-indent: 0.01px;
+            // text-overflow: '';
+            -webkit-appearance: button;
+            /* hide default arrow in chrome OSX */
+          }
+
+          .custom-dropdown::before,
+          .custom-dropdown::after {
+            content: "";
+            position: absolute;
+            pointer-events: none;
+          }
+
+          .custom-dropdown::after {
+            /*  Custom dropdown arrow */
+            content: "\25BC";
+            // height: 1em;
+            font-size: .625em;
+            line-height: 1;
+            right: .1rem;
+            top: 50%;
+            margin-top: -.5em;
+          }
+
+          .custom-dropdown::before {
+            /*  Custom dropdown arrow cover */
+            width: 2em;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 0 3px 3px 0;
+          }
+
+          .custom-dropdown::before {
+            background-color: rgba(0, 0, 0, 0.616);
+          }
+        }
+      }
+
+      img {
+        position: absolute;
+        width: 12%;
+        right: 10%;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          width: 15%;
+          right: 15%;
+        }
+
+        @media screen and (max-width: 420px) {
+          width: 25%;
+          filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.7));
+          right: 38%;
+        }
+      }
+    }
+
+    .textEnd {
+      width: 25%;
+      margin: auto;
+      padding: 6rem 0;
+      justify-content: space-around;
+      letter-spacing: 10px;
+
+      @media screen and (max-width: 768px) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: 90%;
+
+        h4{
+          position: relative;
+          &::after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            top: 100%;
+            right: 35%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section3 {
+  background-color: rgb(36, 36, 36);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .bannerContainer {
+
+    .banner {
+      position: relative;
+
+      .textLeft {
+        display: none;
+      }
+
+      .top {
+        width: 70%;
+        display: flex;
+        flex-flow: row-reverse;
+        position: absolute;
+        left: 12%;
+        top: 30%;
+
+        .textRightTop {
+          display: block;
+          // margin-right: 14rem;
+          text-align: center;
+          letter-spacing: 10px;
+          line-height: 5rem;
+          font-size: 1.5rem;
+        }
+      }
+
+      .textBox {
+        .textRight {
+          letter-spacing: 5px;
+          width: 80%;
+          line-height: 2rem;
+
+          &::before {
+            content: "";
+            width: 80%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: -30%;
+          }
+        }
+
+      }
+
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 745px) {
+
+  .bannerContainer {
+
+    .banner {
+
+      .top {
+        width: 85%;
+        left: 2%;
+
+        .title{
+          font-size: 2rem;
+        }
+
+        .textRightTop {
+          line-height: 3rem;
+          font-size: .5rem;
+        }
+      }
+
+      .textBox {
+        margin-top: 30px;
+
+        .textRight {
+          width: 100%;
+          line-height: 1.2rem;
+          font-size: .5rem;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: -15%;
+          }
+        }
+
+      }
+
+    }
+
+  }
+}
