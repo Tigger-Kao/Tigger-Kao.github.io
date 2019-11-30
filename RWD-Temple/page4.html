@@ -130,12 +130,14 @@
 
                         <div class="form-group col-md-12">
                             <label for="inputName">姓名：</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="洪金寶">
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="洪金寶" onkeyup="value=value.replace(/[^\一-\龥]/g,'')"
+                            　　 onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\一-\龥]/g,''))"
+                            　　 ID="Text4" NAME="Text4">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputPhone">電話：</label>
-                            <input type="number" class="form-control" id="inputPassword4" placeholder="0912-345-678">
+                            <input type="number" class="form-control" id="inputPassword4" placeholder="0912-345-678"  onkeyup="value=value.replace(/[^\d]/g,'') ">
                         </div>
                     </div>
 
@@ -220,7 +222,7 @@
                     <div class="form-row">
                         <div class="form-group col-lg-12">
                             <label for="inputMoney">金額（新台幣）：</label>
-                            <input type="number" class="form-control" id="inputCity">
+                            <input type="number" class="form-control" id="inputCity" onkeyup="value=value.replace(/[^\d]/g,'') ">
                         </div>
                     </div>
 
