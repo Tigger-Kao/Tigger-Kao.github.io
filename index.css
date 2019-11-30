@@ -108,7 +108,7 @@ a:hover {
 }
 
 .bannerContainer .mv {
-  min-width: 320px;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -124,7 +124,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .bannerContainer .mv .video-fluid {
-    width: initial;
+    width: auto;
   }
 }
 
