@@ -107,23 +107,20 @@ a:hover {
   position: relative;
 }
 
-.bannerContainer .mv {
-  width: 100%;
-}
-
 @media screen and (max-width: 600px) {
-  .bannerContainer .mv {
+  .bannerContainer {
     overflow: hidden;
+    max-width: 100%;
   }
 }
 
-.bannerContainer .mv .video-fluid {
+.bannerContainer .video-fluid {
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .bannerContainer .mv .video-fluid {
+  .bannerContainer .video-fluid {
     width: auto;
   }
 }
