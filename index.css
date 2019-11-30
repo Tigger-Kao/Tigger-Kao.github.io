@@ -1,0 +1,783 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體";
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 340;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Noto Serif TC", serif;
+  margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+p {
+  font-size: 1em;
+  line-height: 25px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+a {
+  color: white;
+  margin: 0;
+}
+
+.text_1 {
+  line-height: 35px;
+}
+
+a:hover {
+  color: #aa4c4c;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container-fluid nav {
+  opacity: 0.8;
+  background-color: #021b06;
+}
+
+.container-fluid nav .navbar-brand {
+  padding: 12px;
+  margin-left: 3rem;
+}
+
+.container-fluid nav .navbar-brand .logoText {
+  margin: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid nav .navbar-brand {
+    margin-left: 0;
+    padding: 0;
+  }
+  .container-fluid nav .navbar-brand .logoText {
+    margin-left: 1rem;
+  }
+}
+
+.container-fluid nav .navList .navbar-nav {
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1300px) {
+  .container-fluid nav .navList .navbar-nav {
+    max-width: 25rem;
+  }
+}
+
+.container-fluid nav .navList .navbar-nav .nav-item {
+  font-size: 15px;
+}
+
+.bannerContainer {
+  position: relative;
+}
+
+.bannerContainer .video-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.bannerContainer .title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(0, -55%);
+          transform: translate(0, -55%);
+}
+
+.bannerContainer .title img {
+  height: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  .bannerContainer .title img {
+    height: 30px;
+  }
+}
+
+.bannerContainer .title p {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  opacity: 0.7;
+  letter-spacing: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bannerContainer .title p {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bannerContainer .title p {
+    letter-spacing: 5px;
+  }
+}
+
+.section1 {
+  padding: 270px 0 150px 0;
+  background-image: url(./img/bg-leftImg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+@media screen and (max-width: 1300px) {
+  .section1 {
+    padding: 50px 0 150px 0;
+  }
+}
+
+.section1 .container-fluid {
+  width: 84%;
+  height: auto;
+}
+
+.section1 .container-fluid .row .img {
+  background-image: url(./img/台北市艋舺龍山寺.jpg);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30%;
+  padding: 0;
+  margin-bottom: 62px;
+}
+
+.section1 .container-fluid .row .text-group {
+  padding-left: 140px;
+  padding-right: 35px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section1 .container-fluid .row .text-group {
+    padding-left: 0;
+  }
+}
+
+.section1 .container-fluid .row .text-group h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+  font-family: "Noto Serif TC", serif;
+  color: #6e1420;
+}
+
+.section2 {
+  padding-top: 100px;
+  background-image: url(./img/bg-rightImg.jpg);
+  background-size: 11%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 1%;
+}
+
+.section2 .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.section2 .container-fluid .row {
+  margin-right: 7rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .section2 .container-fluid .row {
+    margin-right: 0;
+  }
+}
+
+.section2 .container-fluid .row .img {
+  padding: 0;
+}
+
+.section2 .container-fluid .row .img .imgUp {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .section2 .container-fluid .row .img .imgUp {
+    width: 0;
+  }
+}
+
+.section2 .container-fluid .row .text-group {
+  padding-left: 3.5rem;
+  padding-right: 1.5rem;
+}
+
+.section2 .container-fluid .row .text-group h3 {
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section2 .container-fluid .row .text-group h3 {
+    margin-top: 3em;
+    margin-bottom: 2rem;
+  }
+}
+
+.section2 .container-fluid .row .text-group h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+  font-family: "Noto Serif TC", serif;
+  color: #6e1420;
+}
+
+.section2 .container-fluid .row .text-group .img {
+  width: 100%;
+  height: 350px;
+  background-image: url(./img/img-section2right.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.section34 {
+  width: 100%;
+  height: auto;
+  background-image: url(./img/紙質質感.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section34 .section3 {
+  height: 850px;
+  padding: 180px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .section34 .section3 {
+    height: 700px;
+  }
+}
+
+.section34 .section3 .container-fluid {
+  width: 65%;
+}
+
+.section34 .section3 .container-fluid .title {
+  padding-bottom: 180px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section34 .section3 .container-fluid .title {
+    padding-bottom: 80px;
+  }
+}
+
+.section34 .section3 .container-fluid .title h3 {
+  letter-spacing: 0.5rem;
+  font-size: 30px;
+}
+
+.section34 .section3 .container-fluid .title h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+  font-family: "Noto Serif TC", serif;
+  color: #6e1420;
+}
+
+.section34 .section3 .container-fluid .row img {
+  width: 100%;
+}
+
+.section34 .section4 .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.section34 .section4 .container-fluid .backImg {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background-image: url(./img/bg-leftImgSection4.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .section34 .section4 .container-fluid .backImg {
+    height: 30vh;
+  }
+}
+
+.section34 .section4 .container-fluid .backImg h3 {
+  letter-spacing: 10px;
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left: 45.5%;
+}
+
+.section34 .section4 .container-fluid .backImg h3 .big {
+  font-size: 50px;
+  font-weight: 540;
+  font-family: "Noto Serif TC", serif;
+  color: #6e1420;
+}
+
+.section34 .section4 .container-fluid .row {
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: 130%;
+  background-position: center;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section34 .section4 .container-fluid .row::after {
+  content: "";
+  background-color: black;
+  opacity: 0;
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section34 .section4 .container-fluid .row .textGroup {
+  padding: 0 100px;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1300px) {
+  .section34 .section4 .container-fluid .row .textGroup {
+    padding: 0 30px;
+  }
+}
+
+.section34 .section4 .container-fluid .row .textGroup h4 {
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .section34 .section4 .container-fluid .row .textGroup p {
+    line-height: 25px;
+  }
+}
+
+.section34 .section4 .container-fluid .row .imgT {
+  padding: 0;
+  position: relative;
+}
+
+.section34 .section4 .container-fluid .row .imgT .img {
+  background-image: url(./img/竹籤及籤文.jpg);
+  width: 100%;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .section34 .section4 .container-fluid .row .imgT .img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .section34 .section4 .container-fluid .row .imgT .img {
+    height: 200px;
+  }
+}
+
+.section34 .section4 .container-fluid .row .imgT p {
+  color: white;
+  font-family: "Noto Serif TC", serif;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .section34 .section4 .container-fluid .row .imgT p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .section34 .section4 .container-fluid .row .imgT p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .section34 .section4 .container-fluid .row .imgT p {
+    font-size: 2rem;
+  }
+}
+
+.section34 .section4 .container-fluid .row .imgB {
+  padding: 0;
+  position: relative;
+}
+
+.section34 .section4 .container-fluid .row .imgB .img {
+  background-image: url(./img/擲茭.jpg);
+  width: 100%;
+  height: 460px;
+  background-size: 130%;
+  background-position: center;
+  background-position-x: 70%;
+  background-position-y: 48%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .section34 .section4 .container-fluid .row .imgB .img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .section34 .section4 .container-fluid .row .imgB .img {
+    height: 200px;
+  }
+}
+
+.section34 .section4 .container-fluid .row .imgB p {
+  color: white;
+  font-family: "Noto Serif TC", serif;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .section34 .section4 .container-fluid .row .imgB p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .section34 .section4 .container-fluid .row .imgB p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .section34 .section4 .container-fluid .row .imgB p {
+    font-size: 2rem;
+  }
+}
+
+.section34 .section4 .rowT:hover {
+  color: white;
+  background-image: url(./img/竹籤及籤文.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-size: cover;
+}
+
+.section34 .section4 .rowT:hover .img {
+  opacity: 0;
+}
+
+.section34 .section4 .rowT:hover::after {
+  opacity: 0.7;
+  z-index: 2;
+  width: 100%;
+}
+
+.section34 .section4 .rowB:hover {
+  color: white;
+  background-image: url(./img/擲茭.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section34 .section4 .rowB:hover .img {
+  opacity: 0;
+}
+
+.section34 .section4 .rowB:hover::after {
+  opacity: 0.7;
+  z-index: 2;
+  width: 100%;
+}
+
+.section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 200px 0;
+}
+
+.section5 .backimg {
+  z-index: 99;
+  width: 20%;
+  height: 280px;
+  position: relative;
+  background-image: url(./img/157414743357485.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .backimg {
+    width: 16%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.section5 .backimg span {
+  position: absolute;
+  top: 130%;
+  right: 6%;
+  cursor: pointer;
+}
+
+.section5 .container-fluid {
+  width: 100%;
+  z-index: 1;
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid {
+    margin-right: 0%;
+  }
+}
+
+.section5 .container-fluid .row {
+  position: relative;
+}
+
+.section5 .container-fluid .row .textBox {
+  z-index: 99;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox {
+    padding: 0;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg {
+  background-image: url(./img/台北市艋舺龍山寺.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 90%;
+  height: 108%;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask {
+  background-color: rgba(14, 14, 14, 0);
+  padding: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask {
+    padding: 50px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask:hover {
+  background-color: rgba(14, 14, 14, 0.61);
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text {
+  color: white;
+  opacity: 0;
+  padding: 20px;
+  border: #fdfdfd solid 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask .text {
+    padding: 50px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text hr {
+  background-color: white;
+  width: 30%;
+  height: 2px;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text .ellipsis {
+  text-align: justify;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text:hover {
+  opacity: 1;
+}
+
+.section5 .container-fluid .row .textBox .backImg {
+  background-image: url(./img/台北市艋舺龍山寺.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 1px 1px 10px rgba(51, 51, 102, 0.5);
+          box-shadow: 1px 1px 10px rgba(51, 51, 102, 0.5);
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask {
+  background-color: rgba(14, 14, 14, 0);
+  padding: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask {
+    padding: 10px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask:hover {
+  background-color: rgba(14, 14, 14, 0.61);
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text {
+  color: white;
+  opacity: 0;
+  padding: 35px 20px 0px 20px;
+  border: #fdfdfd solid 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .section5 .container-fluid .row .textBox .backImg .mask .text {
+    padding: 10px;
+  }
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text hr {
+  background-color: white;
+  width: 30%;
+  height: 2px;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text .ellipsis {
+  text-align: justify;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.section5 .container-fluid .row .textBox .backImg .mask .text:hover {
+  opacity: 1;
+}
+
+.section5 .container-fluid .row::before {
+  content: "";
+  width: 100%;
+  height: 550px;
+  background-color: #222222;
+  z-index: 1;
+  position: absolute;
+  right: 95%;
+  top: -11%;
+}
+
+.section5_phone {
+  text-align: center;
+}
+
+.section5_phone img {
+  width: 70%;
+  margin-top: 4rem;
+}
+
+.section5_phone button {
+  margin: 3.5rem auto;
+  -webkit-box-shadow: 0 0 0.7em black;
+          box-shadow: 0 0 0.7em black;
+}
+
+.section6 {
+  background-color: #242424;
+}
+
+@media screen and (max-width: 767px) {
+  .section4 .textGroup {
+    display: none;
+  }
+  .section5 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

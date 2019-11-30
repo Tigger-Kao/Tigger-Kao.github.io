@@ -1,0 +1,732 @@
+$custom-gutter-width: 70px;
+
+* {
+  font-family: "微軟正黑體";
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 340;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Noto Serif TC", serif;
+  margin: 0 0 30px 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1em;
+  }
+}
+
+p {
+  font-size: 1em;
+  line-height: 25px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+a {
+  color: white;
+  margin: 0;
+}
+
+.text_1 {
+  line-height: 35px;
+}
+
+a:hover {
+  color: rgb(170, 76, 76);
+}
+
+.container-fluid {
+  width: 100%;
+  nav {
+    opacity: 0.8;
+    background-color: rgb(2, 27, 6);
+
+    .navbar-brand {
+      padding: 12px;
+      margin-left: 3rem;
+
+      .logoText {
+        margin: 10px;
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-left: 0;
+        padding: 0;
+
+        .logoText {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .navList {
+      .navbar-nav {
+        width: 980px;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 1300px) {
+          max-width: 25rem;
+        }
+
+        .nav-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.bannerContainer {
+  position: relative;
+
+  .video-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0, -55%);
+
+    img{
+      height: 65px;
+
+      @media screen and (max-width: 600px) {
+        height: 30px;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      margin-top: 20px;
+      opacity: 0.7;
+      // font-family: 'Baskervville', serif;
+      letter-spacing: 20px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 0.5em;
+      }
+
+      @media screen and (max-width: 600px) {
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+.section1 {
+  padding: 270px 0 150px 0;
+  background-image: url(./img/bg-leftImg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  @media screen and (max-width: 1300px) {
+    padding: 50px 0 150px 0;
+  }
+
+  .container-fluid {
+    width: 84%;
+    height: auto;
+
+    .row {
+      .img {
+        background-image: url(./img/台北市艋舺龍山寺.jpg);
+        width: 100%;
+        height: 45vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 30%;
+        padding: 0;
+        margin-bottom: 62px;
+      }
+
+      .text-group {
+        padding-left: $custom-gutter-width * 2;
+        padding-right: $custom-gutter-width / 2;
+
+        @media screen and (max-width: 1300px) {
+          padding-left: 0;
+        }
+
+        h3 {
+          .big {
+            font-size: 50px;
+            font-weight: 540;
+            font-family: "Noto Serif TC", serif;
+            color: rgb(110, 20, 32);
+          }
+        }
+      }
+    }
+  }
+}
+
+.section2 {
+  padding-top: 100px;
+  background-image: url(./img/bg-rightImg.jpg);
+  background-size: 11%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 1%;
+
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+
+    .row {
+      margin-right: 7rem;
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 0;
+      }
+
+      .img {
+        padding: 0;
+
+        .imgUp {
+          width: 100%;
+
+          @media screen and (max-width: 767px) {
+            width: 0;
+          }
+        }
+      }
+
+      .text-group {
+        padding-left: 3.5rem;
+        padding-right: 1.5rem;
+
+        h3 {
+          margin-bottom: 55px;
+
+          @media screen and (max-width: 1024px) {
+            margin-top: 3em;
+            margin-bottom: 2rem;
+          }
+
+          .big {
+            font-size: 50px;
+            font-weight: 540;
+            font-family: "Noto Serif TC", serif;
+            color: rgb(110, 20, 32);
+          }
+        }
+
+        .img {
+          width: 100%;
+          height: 350px;
+          background-image: url(./img/img-section2right.jpeg);
+          background-size: cover;
+          background-position: bottom;
+        }
+      }
+    }
+  }
+}
+
+.section34 {
+  width: 100%;
+  height: auto;
+  background-image: url(./img/紙質質感.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section3 {
+    height: 850px;
+    padding: 180px 0 0 0;
+
+    @media screen and (max-width: 1024px){
+      height: 700px;
+    }
+
+    .container-fluid {
+      width: 65%;
+
+      .title {
+        padding-bottom: 180px;
+
+        @media screen and (max-width: 1024px){
+          padding-bottom: 80px;
+        }
+
+        h3 {
+          letter-spacing: 0.5rem;
+          font-size: 30px;
+
+          .big {
+            font-size: 50px;
+            font-weight: 540;
+            font-family: "Noto Serif TC", serif;
+            color: rgb(110, 20, 32);
+          }
+        }
+      }
+
+      .row {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .section4 {
+    // position: relative;
+
+    .container-fluid {
+      width: 100%;
+      padding: 0;
+
+      .backImg {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        background-image: url(./img/bg-leftImgSection4.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+
+        @media screen and (max-width: 1200px) {
+          height: 30vh;
+        }
+
+        h3 {
+          letter-spacing: 10px;
+          font-size: 30px;
+          position: absolute;
+          top: 65%;
+          left: 45.5%;
+
+          .big {
+            font-size: 50px;
+            font-weight: 540;
+            font-family: "Noto Serif TC", serif;
+            color: rgb(110, 20, 32);
+          }
+        }
+      }
+
+      .row {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        background-size: 130%;
+        background-position: center;
+        position: relative;
+        transition: 1s;
+
+        &::after {
+          content: "";
+          background-color: black;
+          opacity: 0;
+          height: 100%;
+          width: 60%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          transition: 1s;
+        }
+
+        .textGroup {
+          padding: 0 100px;
+          position: relative;
+          z-index: 3;
+
+          @media screen and (max-width: 1300px) {
+            padding: 0 30px;
+          }
+
+          h4 {
+            position: relative;
+          }
+
+          @media screen and (max-width: 1300px) {
+            p {
+              line-height: 25px;
+            }
+          }
+        }
+
+        .imgT {
+          padding: 0;
+          position: relative;
+
+          .img {
+            background-image: url(./img/竹籤及籤文.jpg);
+            width: 100%;
+            height: 460px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @media screen  and (max-width: 767px){
+              height: 300px;
+            }
+            @media screen  and (max-width: 383px){
+              height: 200px;
+            }
+          }
+
+          p {
+            color: white;
+            font-family: "Noto Serif TC", serif;
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 30;
+            display: none;
+
+            @media screen  and (max-width: 767px){
+              display: block;
+            }
+
+            @media screen  and (max-width: 620px){
+              font-size: 3rem;
+            }
+
+            @media screen  and (max-width: 383px){
+              font-size: 2rem;
+            }
+          }
+        }
+
+        .imgB {
+          padding: 0;
+          position: relative;
+
+          .img {
+            background-image: url(./img/擲茭.jpg);
+            width: 100%;
+            height: 460px;
+            background-size: 130%;
+            background-position: center;
+            background-position-x: 70%;
+            background-position-y: 48%;
+            transition: 0.5s;
+
+            @media screen  and (max-width: 767px){
+              height: 300px;
+            }
+            @media screen  and (max-width: 383px){
+              height: 200px;
+            }
+
+          }
+
+          p {
+            color: white;
+            font-family: "Noto Serif TC", serif;
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 30;
+            display: none;
+
+            @media screen  and (max-width: 767px){
+              display: block;
+            }
+
+            @media screen  and (max-width: 620px){
+              font-size: 3rem;
+            }
+
+            @media screen  and (max-width: 383px){
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .rowT {
+      &:hover {
+        color: white;
+        background-image: url(./img/竹籤及籤文.jpg);
+        transition: 1s;
+        background-size: cover;
+
+        .img {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 0.7;
+          z-index: 2;
+          width: 100%;
+        }
+      }
+    }
+
+    .rowB {
+      &:hover {
+        color: white;
+        background-image: url(./img/擲茭.jpg);
+        transition: 1s;
+
+        .img {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 0.7;
+          z-index: 2;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.section5 {
+  display: flex;
+  padding: 200px 0;
+
+  .backimg {
+    z-index: 99;
+    width: 20%;
+    height: 280px;
+    position: relative;
+    background-image: url(./img/157414743357485.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+
+    @media screen and (max-width: 1024px) {
+      width: 16%;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    span {
+      position: absolute;
+      top: 130%;
+      right: 6%;
+      cursor: pointer;
+    }
+  }
+
+  .container-fluid {
+    width: 100%;
+    z-index: 1;
+    margin-right: 3%;
+
+    @media screen and (max-width: 1024px) {
+      margin-right: 0%;
+    }
+
+    .row {
+      position: relative;
+
+      .textBox {
+        z-index: 99;
+        padding: 0;
+
+        @media screen and (max-width: 1024px) {
+          padding: 0;
+        }
+
+        .backImg {
+          background-image: url(./img/台北市艋舺龍山寺.jpg);
+          background-size: cover;
+          background-position: center;
+          max-width: 90%;
+          height: 108%;
+
+          .mask {
+            background-color: rgba(14, 14, 14, 0);
+            padding: 20px;
+            transition: 1s;
+            height: 100%;
+            cursor: pointer;
+
+            @media screen and (max-width: 1024px) {
+              padding: 50px;
+            }
+
+            &:hover {
+              background-color: rgba(14, 14, 14, 0.61);
+            }
+
+            .text {
+              color: white;
+              opacity: 0;
+              padding: 20px;
+              border: rgb(253, 253, 253) solid 1px;
+              transition: 1s;
+              height: 100%;
+
+              @media screen and (max-width: 1024px) {
+                padding: 50px;
+              }
+
+              hr {
+                background-color: white;
+                width: 30%;
+                height: 2px;
+              }
+
+              .ellipsis {
+                text-align: justify;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; //行數
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .backImg {
+          background-image: url(./img/台北市艋舺龍山寺.jpg);
+          background-size: cover;
+          background-position: center;
+          // border-radius: 2%;
+          box-shadow: 1px 1px 10px rgba(20%, 20%, 40%, 0.5);
+
+          .mask {
+            background-color: rgba(14, 14, 14, 0);
+            padding: 20px;
+            transition: 1s;
+            // border-radius: 2%;
+
+            @media screen and (max-width: 1024px) {
+              padding: 10px;
+            }
+
+            &:hover {
+              background-color: rgba(14, 14, 14, 0.61);
+            }
+
+            .text {
+              color: white;
+              opacity: 0;
+              padding: 35px 20px 0px 20px;
+              border: rgb(253, 253, 253) solid 1px;
+              transition: 1s;
+              // border-radius: 2%;
+
+              @media screen and (max-width: 1024px) {
+                padding: 10px;
+              }
+
+              hr {
+                background-color: white;
+                width: 30%;
+                height: 2px;
+              }
+
+              .ellipsis {
+                text-align: justify;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; //行數
+                -webkit-box-orient: vertical;
+                white-space: normal;
+              }
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 550px;
+        background-color: rgb(34, 34, 34);
+        z-index: 1;
+        position: absolute;
+        right: 95%;
+        top: -11%;
+      }
+
+      // &::after {
+      //   content: "";
+      //   width: 100%;
+      //   height: 550px;
+      //   background-color: rgb(34, 34, 34);
+      //   z-index: 1;
+      //   position: absolute;
+      //   left: 93%;
+      //   top: -11%;
+      // }
+    }
+  }
+}
+
+// 768px 有神麼事
+.section5_phone {
+  text-align: center;
+
+  img {
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  button {
+    margin: 3.5rem auto;
+    box-shadow: 0 0 0.7em black;
+  }
+}
+
+.section6 {
+  background-color: rgb(36, 36, 36);
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .section4 .textGroup {
+    display: none;
+  }
+
+  .section5 {
+    // 768px 隱藏 網頁版 有神麼事
+    display: none;
+  }
+}
