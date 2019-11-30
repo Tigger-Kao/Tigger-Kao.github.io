@@ -101,9 +101,9 @@ a:hover {
 .bannerContainer {
   position: relative;
 
-  // .mv{
+  .mv{
   @media screen and (max-width: 600px) {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 
   }
