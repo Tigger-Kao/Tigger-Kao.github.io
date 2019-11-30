@@ -122,12 +122,6 @@ a:hover {
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .bannerContainer .mv .video-fluid {
-    width: auto;
-  }
-}
-
 .bannerContainer .title {
   color: white;
   position: absolute;
