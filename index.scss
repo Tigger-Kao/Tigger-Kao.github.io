@@ -101,9 +101,11 @@ a:hover {
 .bannerContainer {
   position: relative;
 
+  .mv{
   @media screen and (max-width: 600px) {
     width: 100%;
     overflow: hidden;
+    z-index: 50;
   }
 
   .video-fluid {
@@ -112,10 +114,12 @@ a:hover {
 
     @media screen and (max-width: 600px) {
       width: auto;
+      z-index: 48;
       
     }
     
   }
+}
 
 
   .title {

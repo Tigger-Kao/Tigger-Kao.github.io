@@ -108,20 +108,22 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .bannerContainer {
+  .bannerContainer .mv {
     width: 100%;
     overflow: hidden;
+    z-index: 50;
   }
 }
 
-.bannerContainer .video-fluid {
+.bannerContainer .mv .video-fluid {
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 600px) {
-  .bannerContainer .video-fluid {
+  .bannerContainer .mv .video-fluid {
     width: auto;
+    z-index: 48;
   }
 }
 
