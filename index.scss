@@ -364,6 +364,10 @@ a:hover {
       }
 
       .row {
+        @media screen and (max-width:600px){
+          overflow: hidden;
+        }
+
         img {
           width: 100%;
         }
@@ -825,7 +829,7 @@ a:hover {
   }
 
   .section5 {
-    // 768px 隱藏 網頁版 有神麼事
+    // 768px時 隱藏 網頁版 有神麼事
     display: none;
   }
 }

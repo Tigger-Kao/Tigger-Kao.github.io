@@ -253,6 +253,7 @@ a:hover {
 }
 
 .section2 .container-fluid {
+  width: 100%;
   padding: 0;
 }
 
@@ -401,6 +402,12 @@ a:hover {
   font-weight: 540;
   font-family: "Noto Serif TC", serif;
   color: #6e1420;
+}
+
+@media screen and (max-width: 600px) {
+  .section34 .section3 .container-fluid .row {
+    overflow: hidden;
+  }
 }
 
 .section34 .section3 .container-fluid .row img {
