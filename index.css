@@ -107,9 +107,25 @@ a:hover {
   position: relative;
 }
 
-.bannerContainer .video-fluid {
+.bannerContainer .mv {
+  min-width: 320px;
+}
+
+@media screen and (max-width: 600px) {
+  .bannerContainer .mv {
+    overflow: hidden;
+  }
+}
+
+.bannerContainer .mv .video-fluid {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .bannerContainer .mv .video-fluid {
+    width: initial;
+  }
 }
 
 .bannerContainer .title {
@@ -164,9 +180,21 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section1 {
+    background-size: 0%;
+  }
+}
+
 .section1 .container-fluid {
   width: 84%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .section1 .container-fluid {
+    width: 100%;
+  }
 }
 
 .section1 .container-fluid .row .img {
@@ -181,6 +209,13 @@ a:hover {
   margin-bottom: 62px;
 }
 
+@media screen and (max-width: 600px) {
+  .section1 .container-fluid .row .img .text_2 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
 .section1 .container-fluid .row .text-group {
   padding-left: 140px;
   padding-right: 35px;
@@ -189,6 +224,12 @@ a:hover {
 @media screen and (max-width: 1300px) {
   .section1 .container-fluid .row .text-group {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section1 .container-fluid .row .text-group {
+    padding-left: 35px;
   }
 }
 
@@ -206,6 +247,12 @@ a:hover {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .section2 {
+    background-size: 0%;
+  }
 }
 
 .section2 .container-fluid {
@@ -242,6 +289,12 @@ a:hover {
   padding-right: 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .section2 .container-fluid .row .text-group {
+    padding: 0;
+  }
+}
+
 .section2 .container-fluid .row .text-group h3 {
   margin-bottom: 55px;
 }
@@ -250,6 +303,13 @@ a:hover {
   .section2 .container-fluid .row .text-group h3 {
     margin-top: 3em;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section2 .container-fluid .row .text-group h3 {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -266,6 +326,21 @@ a:hover {
   background-image: url(./img/img-section2right.jpeg);
   background-size: cover;
   background-position: bottom;
+}
+
+@media screen and (max-width: 600px) {
+  .section2 .container-fluid .row .text-group .img {
+    background-image: url(./img/43735682692_2eb6f7fae3_b.jpg);
+    background-position: center;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section2 .container-fluid .row .text-group p {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .section34 {
@@ -287,8 +362,21 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section34 .section3 {
+    padding: 50px 0 0 0;
+    height: 500px;
+  }
+}
+
 .section34 .section3 .container-fluid {
   width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+  .section34 .section3 .container-fluid {
+    width: 95%;
+  }
 }
 
 .section34 .section3 .container-fluid .title {
@@ -298,6 +386,12 @@ a:hover {
 @media screen and (max-width: 1024px) {
   .section34 .section3 .container-fluid .title {
     padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section34 .section3 .container-fluid .title {
+    padding-bottom: 30px;
   }
 }
 
@@ -337,6 +431,24 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section34 .section4 .container-fluid .backImg {
+    background-image: none;
+    height: 8vh;
+  }
+  .section34 .section4 .container-fluid .backImg::before {
+    content: "廟宇解煩";
+    width: 100%;
+    height: 8vh;
+    font-size: 1.5rem;
+    font-family: "Noto Serif TC", serif;
+    color: white;
+    background-color: #021b06;
+    position: absolute;
+    text-align: center;
+  }
+}
+
 .section34 .section4 .container-fluid .backImg h3 {
   letter-spacing: 10px;
   font-size: 30px;
@@ -350,6 +462,12 @@ a:hover {
   font-weight: 540;
   font-family: "Noto Serif TC", serif;
   color: #6e1420;
+}
+
+@media screen and (max-width: 600px) {
+  .section34 .section4 .container-fluid .backImg h3 {
+    display: none;
+  }
 }
 
 .section34 .section4 .container-fluid .row {

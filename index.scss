@@ -57,6 +57,7 @@ a:hover {
 
 .container-fluid {
   width: 100%;
+
   nav {
     opacity: 0.8;
     background-color: rgb(2, 27, 6);
@@ -100,10 +101,21 @@ a:hover {
 .bannerContainer {
   position: relative;
 
+  .mv{
+    min-width: 320px;
+    @media screen and (max-width: 600px) {
+      overflow: hidden;
+    }
+
   .video-fluid {
     width: 100%;
     height: auto;
+
+    @media screen and (max-width: 600px) {
+      width: initial;
+    }
   }
+}
 
   .title {
     color: white;
@@ -112,7 +124,7 @@ a:hover {
     left: 20%;
     transform: translate(0, -55%);
 
-    img{
+    img {
       height: 65px;
 
       @media screen and (max-width: 600px) {
@@ -149,9 +161,17 @@ a:hover {
     padding: 50px 0 150px 0;
   }
 
+  @media screen and (max-width: 600px) {
+    background-size: 0%;
+  }
+
   .container-fluid {
     width: 84%;
     height: auto;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
 
     .row {
       .img {
@@ -164,6 +184,13 @@ a:hover {
         background-position-y: 30%;
         padding: 0;
         margin-bottom: 62px;
+
+        .text_2 {
+          @media screen and (max-width: 600px) {
+            padding-left: $custom-gutter-width /2;
+            padding-right: $custom-gutter-width / 2;
+          }
+        }
       }
 
       .text-group {
@@ -172,6 +199,10 @@ a:hover {
 
         @media screen and (max-width: 1300px) {
           padding-left: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+          padding-left: $custom-gutter-width /2
         }
 
         h3 {
@@ -194,6 +225,10 @@ a:hover {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 1%;
+
+  @media screen and (max-width: 600px) {
+    background-size: 0%;
+  }
 
   .container-fluid {
     width: 100%;
@@ -222,12 +257,21 @@ a:hover {
         padding-left: 3.5rem;
         padding-right: 1.5rem;
 
+        @media screen and (max-width: 600px) {
+          padding: 0;
+        }
+
         h3 {
           margin-bottom: 55px;
 
           @media screen and (max-width: 1024px) {
             margin-top: 3em;
             margin-bottom: 2rem;
+          }
+
+          @media screen and (max-width: 600px) {
+            padding-left: $custom-gutter-width /2;
+            padding-right: $custom-gutter-width / 2;
           }
 
           .big {
@@ -244,6 +288,19 @@ a:hover {
           background-image: url(./img/img-section2right.jpeg);
           background-size: cover;
           background-position: bottom;
+
+          @media screen and (max-width: 600px) {
+            background-image: url(./img/43735682692_2eb6f7fae3_b.jpg);
+            background-position: center;
+            height: 200px;
+          }
+        }
+
+        p {
+          @media screen and (max-width: 600px) {
+            padding-left: $custom-gutter-width /2;
+            padding-right: $custom-gutter-width /2;
+          }
         }
       }
     }
@@ -257,22 +314,36 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 
+
   .section3 {
     height: 850px;
     padding: 180px 0 0 0;
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       height: 700px;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 50px 0 0 0;
+      height: 500px;
     }
 
     .container-fluid {
       width: 65%;
 
+      @media screen and (max-width: 600px) {
+        width: 95%;
+      }
+
       .title {
         padding-bottom: 180px;
 
-        @media screen and (max-width: 1024px){
+        @media screen and (max-width: 1024px) {
           padding-bottom: 80px;
+        }
+
+        @media screen and (max-width: 600px) {
+          padding-bottom: 30px;
         }
 
         h3 {
@@ -315,6 +386,24 @@ a:hover {
           height: 30vh;
         }
 
+        @media screen and (max-width: 600px) {
+          background-image: none;
+          height: 8vh;
+
+          &::before {
+            content: "廟宇解煩";
+            width: 100%;
+            height: 8vh;
+            font-size: 1.5rem;
+            font-family: "Noto Serif TC", serif;
+            color: white;
+            background-color: rgb(2, 27, 6);
+            position: absolute;
+            text-align: center;
+          }
+
+        }
+
         h3 {
           letter-spacing: 10px;
           font-size: 30px;
@@ -327,6 +416,10 @@ a:hover {
             font-weight: 540;
             font-family: "Noto Serif TC", serif;
             color: rgb(110, 20, 32);
+          }
+
+          @media screen and (max-width: 600px) {
+            display: none;
           }
         }
       }
@@ -386,10 +479,11 @@ a:hover {
             background-position: center;
             background-repeat: no-repeat;
 
-            @media screen  and (max-width: 767px){
+            @media screen and (max-width: 767px) {
               height: 300px;
             }
-            @media screen  and (max-width: 383px){
+
+            @media screen and (max-width: 383px) {
               height: 200px;
             }
           }
@@ -405,15 +499,15 @@ a:hover {
             z-index: 30;
             display: none;
 
-            @media screen  and (max-width: 767px){
+            @media screen and (max-width: 767px) {
               display: block;
             }
 
-            @media screen  and (max-width: 620px){
+            @media screen and (max-width: 620px) {
               font-size: 3rem;
             }
 
-            @media screen  and (max-width: 383px){
+            @media screen and (max-width: 383px) {
               font-size: 2rem;
             }
           }
@@ -433,10 +527,11 @@ a:hover {
             background-position-y: 48%;
             transition: 0.5s;
 
-            @media screen  and (max-width: 767px){
+            @media screen and (max-width: 767px) {
               height: 300px;
             }
-            @media screen  and (max-width: 383px){
+
+            @media screen and (max-width: 383px) {
               height: 200px;
             }
 
@@ -453,15 +548,15 @@ a:hover {
             z-index: 30;
             display: none;
 
-            @media screen  and (max-width: 767px){
+            @media screen and (max-width: 767px) {
               display: block;
             }
 
-            @media screen  and (max-width: 620px){
+            @media screen and (max-width: 620px) {
               font-size: 3rem;
             }
 
-            @media screen  and (max-width: 383px){
+            @media screen and (max-width: 383px) {
               font-size: 2rem;
             }
           }
