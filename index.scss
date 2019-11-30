@@ -103,7 +103,6 @@ a:hover {
 
   @media screen and (max-width: 600px) {
     overflow: hidden;
-    max-width: 100%;
   }
 
   .video-fluid {
@@ -112,7 +111,9 @@ a:hover {
 
     @media screen and (max-width: 600px) {
       width: auto;
+      
     }
+    
   }
 
 
