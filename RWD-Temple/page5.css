@@ -86,6 +86,7 @@ a {
   height: 100vh;
   background-image: url(./img/XlgcYnepmBFxYIldYcldNeYyz.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .bannerContainer .banner {
@@ -93,6 +94,10 @@ a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.63);
   position: relative;
+}
+
+.bannerContainer .banner .textRightTop {
+  display: none;
 }
 
 .bannerContainer .banner .title {
@@ -111,12 +116,6 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .bannerContainer .banner .title {
-    font-size: 2.5rem;
-  }
-}
-
 .bannerContainer .banner .textBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,19 +131,6 @@ a {
   top: 55%;
   left: 10%;
   margin-top: 5rem;
-}
-
-@media screen and (max-width: 1039px) {
-  .bannerContainer .banner .textBox {
-    width: 100%;
-    left: 0%;
-  }
-}
-
-@media screen and (max-width: 924px) {
-  .bannerContainer .banner .textBox {
-    margin-top: 1rem;
-  }
 }
 
 .bannerContainer .banner .textBox .textLeft {
@@ -247,7 +233,7 @@ a {
 }
 
 .section1 .modal-lg {
-  margin-top: 50px;
+  margin-top: 160px;
 }
 
 .section1 .modal-lg .formBox {
@@ -290,6 +276,60 @@ a {
 
 .section1 .modal-lg .formBox .textBox hr {
   background-color: black;
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown select {
+  background-color: #ffffff;
+  color: black;
+  font-size: inherit;
+  padding: .4rem 17rem .4rem .5rem;
+  border: black 1px solid;
+  margin: 0;
+  border-radius: 3px;
+  -webkit-appearance: button;
+  /* hide default arrow in chrome OSX */
+}
+
+@media screen and (max-width: 991px) {
+  .section1 .modal-lg .formBox .textBox .row .custom-dropdown select {
+    padding-right: 8rem;
+  }
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown::before,
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  font-size: .625em;
+  line-height: 1;
+  right: .5rem;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.section1 .modal-lg .formBox .textBox .row .custom-dropdown::before {
+  background-color: rgba(0, 0, 0, 0.616);
 }
 
 .section1 .modal-lg .formBox .textBox .row .uploadImg {
@@ -394,11 +434,40 @@ a {
           justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1024px) {
+.section2 .container-fluid .textBox .textHidden {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
   .section2 .container-fluid .textBox {
     min-width: 100%;
+    -webkit-transform: translate(0, 1%);
+            transform: translate(0, 1%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 .container-fluid .textBox {
     -webkit-transform: translate(0);
             transform: translate(0);
+  }
+  .section2 .container-fluid .textBox .textHidden {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .section2 .container-fluid .textBox .textHidden .button {
+    width: 100%;
+    height: 40px;
+    background-color: #16270a;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .section2 .container-fluid .textBox .textHidden p {
+    margin: 30px;
+    text-align: justify;
   }
 }
 
@@ -412,13 +481,7 @@ a {
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
-  .section2 .container-fluid .textBox .backImg {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .section2 .container-fluid .textBox .backImg {
     width: 100%;
     margin-bottom: 0rem;
@@ -434,14 +497,6 @@ a {
 
 .section2 .container-fluid .textBox .backImg .mask:hover {
   background-color: rgba(14, 14, 14, 0.61);
-}
-
-@media screen and (max-width: 768px) {
-  .section2 .container-fluid .textBox .backImg .mask:hover {
-    background-color: rgba(14, 14, 14, 0);
-    -webkit-transition: none;
-    transition: none;
-  }
 }
 
 .section2 .container-fluid .textBox .backImg .mask .text {
@@ -466,6 +521,12 @@ a {
   height: 2px;
 }
 
+@media screen and (max-width: 768px) {
+  .section2 .container-fluid .textBox .backImg .mask .text hr {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
 .section2 .container-fluid .textBox .backImg .mask .text .ellipsis {
   text-align: justify;
   overflow: hidden;
@@ -482,8 +543,8 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .section2 .container-fluid .textBox .backImg:hover::before {
-    content: "萬華艋舺龍山寺";
+  .section2 .container-fluid .textBox .backImg::before {
+    content: "萬 華 艋 舺 龍 山 寺";
     width: 100%;
     height: 45%;
     background-color: rgba(0, 0, 0, 0.74);
@@ -491,8 +552,27 @@ a {
     bottom: 0;
     color: white;
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Noto Serif TC", serif;
+  }
+  .section2 .container-fluid .textBox .backImg::after {
+    content: "求 姻 緣 ★ ★ ★ ☆ ☆";
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: -10%;
+    color: white;
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section2 .container-fluid .textBox .backImg::before {
+    font-size: 1.2rem;
+  }
+  .section2 .container-fluid .textBox .backImg::after {
+    font-size: 1rem;
   }
 }
 
@@ -621,5 +701,79 @@ a {
 
 .section3 {
   background-color: #242424;
+}
+
+@media screen and (max-width: 1000px) {
+  .bannerContainer .banner {
+    position: relative;
+  }
+  .bannerContainer .banner .textLeft {
+    display: none;
+  }
+  .bannerContainer .banner .top {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+  }
+  .bannerContainer .banner .top .textRightTop {
+    display: block;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 5rem;
+    font-size: 1.5rem;
+  }
+  .bannerContainer .banner .textBox .textRight {
+    letter-spacing: 5px;
+    width: 80%;
+    line-height: 2rem;
+  }
+  .bannerContainer .banner .textBox .textRight::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -100%;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .bannerContainer .banner .top {
+    width: 80%;
+    left: 5%;
+    top: 40%;
+  }
+  .bannerContainer .banner .top .title {
+    font-size: 2.5rem;
+  }
+  .bannerContainer .banner .top .textRightTop {
+    line-height: 3rem;
+    font-size: .5rem;
+  }
+  .bannerContainer .banner .textBox {
+    margin-top: 20px;
+  }
+  .bannerContainer .banner .textBox .textRight {
+    width: 100%;
+    line-height: 1.2rem;
+    font-size: .5rem;
+  }
+  .bannerContainer .banner .textBox .textRight::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -40%;
+  }
 }
 /*# sourceMappingURL=page5.css.map */
