@@ -21,14 +21,11 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-family: "Noto Serif TC", serif;
 }
 
 h4 {
   font-size: 1.5em;
   font-weight: 500;
-  font-family: "Noto Serif TC", serif;
-  margin: 0 0 30px 0;
 
   @media screen and (max-width: 1024px) {
     font-size: 1em;
@@ -37,7 +34,7 @@ h4 {
 
 p {
   font-size: 1em;
-  line-height: 25px;
+  line-height: 35px;
   text-align: justify;
   font-weight: 500;
 }
@@ -46,28 +43,18 @@ a {
   color: white;
   margin: 0;
 }
-
-.text_1 {
-  line-height: 35px;
-}
-
-a:hover {
-  color: rgb(170, 76, 76);
-}
-
 .container-fluid {
   width: 100%;
-
   nav {
     opacity: 0.8;
-    background-color: rgb(2, 27, 6);
+    background-color: rgb(31, 29, 29);
 
     .navbar-brand {
       padding: 12px;
       margin-left: 3rem;
 
       .logoText {
-        margin: 10px;
+        margin-left: 2rem;
       }
 
       @media screen and (max-width: 991px) {
@@ -101,25 +88,10 @@ a:hover {
 .bannerContainer {
   position: relative;
 
-  .mv{
-  @media screen and (max-width: 600px) {
-    max-width: 100%;
-    overflow: hidden;
-
-  }
-
   .video-fluid {
     width: 100%;
     height: auto;
-
-    @media screen and (max-width: 600px) {
-      width: auto;
-      
-    }
-    
   }
-}
-
 
   .title {
     color: white;
@@ -128,28 +100,13 @@ a:hover {
     left: 20%;
     transform: translate(0, -55%);
 
-    img {
-      height: 65px;
-
-      @media screen and (max-width: 600px) {
-        height: 30px;
-      }
-    }
-
     p {
-      font-size: 1rem;
+      font-size: 2.5rem;
       letter-spacing: 3px;
       margin-top: 20px;
-      opacity: 0.7;
-      // font-family: 'Baskervville', serif;
-      letter-spacing: 20px;
 
       @media screen and (max-width: 1024px) {
-        font-size: 0.5em;
-      }
-
-      @media screen and (max-width: 600px) {
-        letter-spacing: 5px;
+        font-size: 1em;
       }
     }
   }
@@ -165,17 +122,9 @@ a:hover {
     padding: 50px 0 150px 0;
   }
 
-  @media screen and (max-width: 600px) {
-    background-size: 0%;
-  }
-
   .container-fluid {
     width: 84%;
     height: auto;
-
-    @media screen and (max-width: 600px) {
-      width: 100%;
-    }
 
     .row {
       .img {
@@ -188,13 +137,6 @@ a:hover {
         background-position-y: 30%;
         padding: 0;
         margin-bottom: 62px;
-
-        .text_2 {
-          @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
-            padding-right: $custom-gutter-width / 2;
-          }
-        }
       }
 
       .text-group {
@@ -205,16 +147,10 @@ a:hover {
           padding-left: 0;
         }
 
-        @media screen and (max-width: 600px) {
-          padding-left: $custom-gutter-width /2
-        }
-
         h3 {
           .big {
             font-size: 50px;
             font-weight: 540;
-            font-family: "Noto Serif TC", serif;
-            color: rgb(110, 20, 32);
           }
         }
       }
@@ -230,13 +166,8 @@ a:hover {
   background-position: right;
   background-position-y: 1%;
 
-  @media screen and (max-width: 600px) {
-    background-size: 0%;
-  }
-
   .container-fluid {
     width: 100%;
-    padding: 0;
 
     .row {
       margin-right: 7rem;
@@ -249,7 +180,7 @@ a:hover {
         padding: 0;
 
         .imgUp {
-          width: 100%;
+          width: 103%;
 
           @media screen and (max-width: 767px) {
             width: 0;
@@ -261,28 +192,17 @@ a:hover {
         padding-left: 3.5rem;
         padding-right: 1.5rem;
 
-        @media screen and (max-width: 600px) {
-          padding: 0;
-        }
-
         h3 {
-          margin-bottom: 55px;
+          margin-bottom: 95px;
 
           @media screen and (max-width: 1024px) {
             margin-top: 3em;
             margin-bottom: 2rem;
           }
 
-          @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
-            padding-right: $custom-gutter-width / 2;
-          }
-
           .big {
             font-size: 50px;
             font-weight: 540;
-            font-family: "Noto Serif TC", serif;
-            color: rgb(110, 20, 32);
           }
         }
 
@@ -292,19 +212,6 @@ a:hover {
           background-image: url(./img/img-section2right.jpeg);
           background-size: cover;
           background-position: bottom;
-
-          @media screen and (max-width: 600px) {
-            background-image: url(./img/43735682692_2eb6f7fae3_b.jpg);
-            background-position: center;
-            height: 200px;
-          }
-        }
-
-        p {
-          @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
-            padding-right: $custom-gutter-width /2;
-          }
         }
       }
     }
@@ -318,37 +225,15 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 
-
   .section3 {
-    height: 850px;
-    padding: 180px 0 0 0;
-
-    @media screen and (max-width: 1024px) {
-      height: 700px;
-    }
-
-    @media screen and (max-width: 600px) {
-      padding: 50px 0 0 0;
-      height: 500px;
-    }
+    height: 1000px;
+    padding: 180px 0;
 
     .container-fluid {
       width: 65%;
 
-      @media screen and (max-width: 600px) {
-        width: 95%;
-      }
-
       .title {
         padding-bottom: 180px;
-
-        @media screen and (max-width: 1024px) {
-          padding-bottom: 80px;
-        }
-
-        @media screen and (max-width: 600px) {
-          padding-bottom: 30px;
-        }
 
         h3 {
           letter-spacing: 0.5rem;
@@ -357,19 +242,7 @@ a:hover {
           .big {
             font-size: 50px;
             font-weight: 540;
-            font-family: "Noto Serif TC", serif;
-            color: rgb(110, 20, 32);
           }
-        }
-      }
-
-      .row {
-        @media screen and (max-width:600px){
-          overflow: hidden;
-        }
-
-        img {
-          width: 100%;
         }
       }
     }
@@ -384,50 +257,26 @@ a:hover {
 
       .backImg {
         width: 100%;
-        height: 40vh;
+        height: 52vh;
         position: relative;
         background-image: url(./img/bg-leftImgSection4.png);
         background-repeat: no-repeat;
-        background-size: 40%;
+        background-size: 53%;
 
         @media screen and (max-width: 1200px) {
           height: 30vh;
-        }
-
-        @media screen and (max-width: 600px) {
-          background-image: none;
-          height: 8vh;
-
-          &::before {
-            content: "廟宇解煩";
-            width: 100%;
-            height: 8vh;
-            font-size: 1.5rem;
-            font-family: "Noto Serif TC", serif;
-            color: white;
-            background-color: rgb(2, 27, 6);
-            position: absolute;
-            text-align: center;
-          }
-
         }
 
         h3 {
           letter-spacing: 10px;
           font-size: 30px;
           position: absolute;
-          top: 65%;
-          left: 45.5%;
+          top: 75%;
+          left: 50%;
 
           .big {
             font-size: 50px;
             font-weight: 540;
-            font-family: "Noto Serif TC", serif;
-            color: rgb(110, 20, 32);
-          }
-
-          @media screen and (max-width: 600px) {
-            display: none;
           }
         }
       }
@@ -477,54 +326,17 @@ a:hover {
 
         .imgT {
           padding: 0;
-          position: relative;
-
           .img {
             background-image: url(./img/竹籤及籤文.jpg);
             width: 100%;
             height: 460px;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
-
-            @media screen and (max-width: 767px) {
-              height: 300px;
-            }
-
-            @media screen and (max-width: 383px) {
-              height: 200px;
-            }
-          }
-
-          p {
-            color: white;
-            font-family: "Noto Serif TC", serif;
-            font-size: 4rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 30;
-            display: none;
-
-            @media screen and (max-width: 767px) {
-              display: block;
-            }
-
-            @media screen and (max-width: 620px) {
-              font-size: 3rem;
-            }
-
-            @media screen and (max-width: 383px) {
-              font-size: 2rem;
-            }
           }
         }
 
         .imgB {
           padding: 0;
-          position: relative;
-
           .img {
             background-image: url(./img/擲茭.jpg);
             width: 100%;
@@ -534,50 +346,16 @@ a:hover {
             background-position-x: 70%;
             background-position-y: 48%;
             transition: 0.5s;
-
-            @media screen and (max-width: 767px) {
-              height: 300px;
-            }
-
-            @media screen and (max-width: 383px) {
-              height: 200px;
-            }
-
-          }
-
-          p {
-            color: white;
-            font-family: "Noto Serif TC", serif;
-            font-size: 4rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 30;
-            display: none;
-
-            @media screen and (max-width: 767px) {
-              display: block;
-            }
-
-            @media screen and (max-width: 620px) {
-              font-size: 3rem;
-            }
-
-            @media screen and (max-width: 383px) {
-              font-size: 2rem;
-            }
           }
         }
       }
     }
 
-    .rowT {
+    .rowT{
       &:hover {
         color: white;
         background-image: url(./img/竹籤及籤文.jpg);
         transition: 1s;
-        background-size: cover;
 
         .img {
           opacity: 0;
@@ -591,7 +369,7 @@ a:hover {
       }
     }
 
-    .rowB {
+    .rowB{
       &:hover {
         color: white;
         background-image: url(./img/擲茭.jpg);
@@ -613,7 +391,7 @@ a:hover {
 
 .section5 {
   display: flex;
-  padding: 200px 0;
+  padding: 100px 0;
 
   .backimg {
     z-index: 99;
@@ -625,53 +403,33 @@ a:hover {
     background-repeat: no-repeat;
     background-position-x: 80%;
 
-    @media screen and (max-width: 1024px) {
-      width: 16%;
-      margin-right: 1rem;
-      margin-left: 1rem;
-    }
-
     span {
       position: absolute;
-      top: 130%;
-      right: 6%;
-      cursor: pointer;
+      top: 110%;
+      right: 30%;
     }
   }
 
   .container-fluid {
     width: 100%;
     z-index: 1;
-    margin-right: 3%;
-
-    @media screen and (max-width: 1024px) {
-      margin-right: 0%;
-    }
+    margin-right: 4%;
 
     .row {
       position: relative;
 
       .textBox {
         z-index: 99;
-        padding: 0;
-
-        @media screen and (max-width: 1024px) {
-          padding: 0;
-        }
 
         .backImg {
           background-image: url(./img/台北市艋舺龍山寺.jpg);
           background-size: cover;
           background-position: center;
-          max-width: 90%;
-          height: 108%;
 
           .mask {
             background-color: rgba(14, 14, 14, 0);
             padding: 20px;
             transition: 1s;
-            height: 100%;
-            cursor: pointer;
 
             @media screen and (max-width: 1024px) {
               padding: 50px;
@@ -687,67 +445,9 @@ a:hover {
               padding: 20px;
               border: rgb(253, 253, 253) solid 1px;
               transition: 1s;
-              height: 100%;
 
               @media screen and (max-width: 1024px) {
                 padding: 50px;
-              }
-
-              hr {
-                background-color: white;
-                width: 30%;
-                height: 2px;
-              }
-
-              .ellipsis {
-                text-align: justify;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3; //行數
-                -webkit-box-orient: vertical;
-                white-space: normal;
-              }
-
-              &:hover {
-                opacity: 1;
-              }
-            }
-          }
-        }
-
-        .backImg {
-          background-image: url(./img/台北市艋舺龍山寺.jpg);
-          background-size: cover;
-          background-position: center;
-          // border-radius: 2%;
-          box-shadow: 1px 1px 10px rgba(20%, 20%, 40%, 0.5);
-
-          .mask {
-            background-color: rgba(14, 14, 14, 0);
-            padding: 20px;
-            transition: 1s;
-            // border-radius: 2%;
-
-            @media screen and (max-width: 1024px) {
-              padding: 10px;
-            }
-
-            &:hover {
-              background-color: rgba(14, 14, 14, 0.61);
-            }
-
-            .text {
-              color: white;
-              opacity: 0;
-              padding: 35px 20px 0px 20px;
-              border: rgb(253, 253, 253) solid 1px;
-              transition: 1s;
-              // border-radius: 2%;
-
-              @media screen and (max-width: 1024px) {
-                padding: 10px;
               }
 
               hr {
@@ -783,53 +483,12 @@ a:hover {
         z-index: 1;
         position: absolute;
         right: 95%;
-        top: -11%;
+        top: -15%;
       }
-
-      // &::after {
-      //   content: "";
-      //   width: 100%;
-      //   height: 550px;
-      //   background-color: rgb(34, 34, 34);
-      //   z-index: 1;
-      //   position: absolute;
-      //   left: 93%;
-      //   top: -11%;
-      // }
     }
-  }
-}
-
-// 768px 有神麼事
-.section5_phone {
-  text-align: center;
-
-  img {
-    width: 70%;
-    margin-top: 4rem;
-  }
-
-  button {
-    margin: 3.5rem auto;
-    box-shadow: 0 0 0.7em black;
   }
 }
 
 .section6 {
   background-color: rgb(36, 36, 36);
-}
-
-
-
-
-
-@media screen and (max-width: 767px) {
-  .section4 .textGroup {
-    display: none;
-  }
-
-  .section5 {
-    // 768px時 隱藏 網頁版 有神麼事
-    display: none;
-  }
 }

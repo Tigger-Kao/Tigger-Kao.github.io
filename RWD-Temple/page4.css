@@ -262,6 +262,19 @@ a {
   font-size: 28px;
   letter-spacing: 10px;
   margin-bottom: 3rem;
+  position: relative;
+}
+
+@media screen and (max-width: 420px) {
+  .section2 .container-fluid .donatForm form .title::after {
+    content: "";
+    width: 9rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+  }
 }
 
 .section2 .container-fluid .donatForm form .form-group {

@@ -16,65 +16,7 @@
 
 
     <style>
-        /* .pagination-container {
-            /* text-align: center;
-        } */
 
-        /* .pagination {
-            position: relative;
-        } */
-        /* 
-        .pagination a {
-            position: relative;
-            display: inline-block;
-            color: #2c3e50;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 8px 16px 10px;
-        }
-
-        .pagination a:before {
-            z-index: -1;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            content: "";
-            top: 0;
-            left: 0;
-            background-color: #ff0000;
-            border-radius: 24px;
-            -webkit-transform: scale(0);
-            transform: scale(0);
-            transition: all 0.2s;
-        }
-
-        .pagination a:hover,
-        .pagination a .pagination-active {
-            color: rgb(0, 156, 204);
-        }
-
-        .pagination a:hover:before,
-        .pagination a .pagination-active:before {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-
-        .pagination .pagination-active {
-            color: rgb(0, 0, 0);
-        }
-
-        .pagination .pagination-active:before {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        } */
-
-        /* .pagination-newer {
-            margin-right: 50px;
-        }
-
-        .pagination-older {
-            margin-left: 50px;
-        } */
     </style>
 
 </head>
@@ -96,253 +38,191 @@
 
 
 
-    <span class="custom-dropdown">
-            <select>
-                <option>每月</option>
-                <option>每季</option>  
-                <option>每半年</option>
-                <option>每年</option>
-            </select>
-        </span>
 
 
 
 
+    <div class="container">
 
+        <div class="bs-example bs-example-padded-bottom">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                Long modal
+            </button>
 
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                No Header &amp; Footer
+            </button>
 
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myLargeModal">
+                Large Modal
+            </button>
 
+            <button class="btn btn-primary" data-toggle="modal" data-target="#mySmallModal">
+                Small Modal
+            </button>
+        </div>
 
-
-    <!-- <section id="profiles"> -->
-
-    <!-- <a href="#" class="thumb">
-            <p class="img-responsive img-rounded" data-toggle="modal" data-target=".modal-profile-lg">0000</p>
-        </a> -->
-
-
-    <div class="arrow text-center">
-        <p>我要留言</p>
-        <a href="" class="thumb">
-            <p class="img-responsive img-rounded" data-toggle="modal" data-target=".modal-profile-lg">﹀</p>
-        </a>
-    </div>
-    <!-- </section> -->
-
-
-
-
-
-
-
-
-    <!-- .modal-profile -->
-    <section class="section1">
-        <div class="modal fade modal-profile" role="dialog">
-            <div class="modal-dialog modal-lg">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                    <section class="section1">
-
-                        <div class="formBox">
-
-                            <div class="textBox">
-
-                                <div class="title">我要留言</div>
-                                <hr>
-
-                                <div class="row">
-                                    <!-- 姓名 -->
-                                    <div class="form-group col-md-6">
-                                        <label>姓名：</label>
-                                        <input type="text" class="form-control" placeholder="洪金寶">
-                                    </div>
-                                    <!-- 求什麼 -->
-                                    <div class="form-group col-md-6">
-                                        <label>求保庇：</label>
-                                        <select class="form-control">
-                                            <option selected>請選擇</option>
-                                            <option>求姻緣</option>
-                                            <option>求財運</option>
-                                            <option>求學業</option>
-                                            <option>求事業</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <!-- 性別 -->
-                                    <div class="col-md-6">
-                                        <label>姓別：</label>
-                                        <label>
-                                            <input type="radio" name="radioName" id="radioName1">
-                                            <span class="radio-name">男生</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="radioName" id="radioName2">
-                                            <span class="radio-name">女生</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="radioName" id="radioName3">
-                                            <span class="radio-name">不公開</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="uploadImg col-md-6">
-                                        <!-- 圖片上傳 -->
-                                        <label>上傳圖片：</label>
-                                        <label class="btn btn-dark btn-sm my-0">
-                                            <input id="upload_img" style="display:none;" type="file">
-                                            <i class="fa fa-photo"></i> 上傳圖片
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- 評分 -->
-                                        <label class="my-0">評分：</label>
-                                        <div class="rating">
-                                            <input type="radio" id="star5" name="rating" value="5" hidden />
-                                            <label for="star5"></label>
-                                            <input type="radio" id="star4" name="rating" value="4" hidden />
-                                            <label for="star4"></label>
-                                            <input type="radio" id="star3" name="rating" value="3" hidden />
-                                            <label for="star3"></label>
-                                            <input type="radio" id="star2" name="rating" value="2" hidden />
-                                            <label for="star2"></label>
-                                            <input type="radio" id="star1" name="rating" value="1" hidden />
-                                            <label for="star1"></label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <!-- 感想 -->
-                                    <div class="form-group col-12">
-                                        <label>感想：</label>
-                                        <textarea class="form-control" id="textarea" rows="3"></textarea>
-                                    </div>
-                                </div>
-
-                                <!-- 留言按鈕 -->
-                                <a href="#" class="btn btn-dark" role="button">留言</a>
-
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //.modal-profile -->
-
-
-
-
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="backImg" data-toggle="modal" data-target=".modal-experience">
-        <div class="mask">
-            <div class="text text-center">
-                <h4>艋舺龍山寺</h4>
-                <hr>
-                <p class="text-center pb-xl-4">求姻緣</p>
-                <p class="text-center">想要幸福 / 女</p>
-                <p class="star text-center">★★★☆☆</p>
-                <p class="ellipsis text-center">
-                    我和男友去年12月透過朋友介紹認識，因為兩人都要準備考試，所以有加臉書好友向他請教了一些問題後，就沒後續。直到今年三月，在臉書上看到男友的文章深深被感動，於是冒昧的私訊他聊了一下，這時才發現兩人一聊就投機，除了有共同興趣也有共同話題，從那天起聯繫就熱絡起來。之後因為跟男友借一本書，兩人才正式見面並互動。突然想到當初月老說的擇偶4大條件「身高要176～177、上進心、愛看書、愛動物」，好奇詢問之下，男友的身高剛好吻合，沒想到這種刁難條件月老也都能達成，真是太神啦！
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade modal-experience" role="dialog">
-
-        <div class="modal-dialog modal-lg">
-
-            <div class="modal-content">
-
-                <div class="formBox">
-
-                    <div class="textBox">
-
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span>X</span>
-                        </button>
-
-                        <div class="title">訪客留言</div>
-
-                        <hr>
-
-                        <img src="./img/台北市艋舺龍山寺.jpg" alt="">
-
-                        <p>參拜廟宇：艋舺龍山寺</p>
-                        <p>姓名：想要幸福</p>
-                        <p>性別：女</p>
-
-                        <div class="star-rating">
-                            <div class="star-rating-top" style="width:80%">
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                            </div>
-                            <div class="star-rating-bottom">
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                            </div>
-                        </div>
-
-                        <p>我和男友去年12月透過朋友介紹認識，因為兩人都要準備考試，所以有加臉書好友向他請教了一些問題後，就沒後續。直到今年三月，在臉書上看到男友的文章深深被感動，於是冒昧的私訊他聊了一下，這時才發現兩人一聊就投機，除了有共同興趣也有共同話題，從那天起聯繫就熱絡起來。之後因為跟男友借一本書，兩人才正式見面並互動。突然想到當初月老說的擇偶4大條件「身高要176～177、上進心、愛看書、愛動物」，好奇詢問之下，男友的身高剛好吻合，沒想到這種刁難條件月老也都能達成，真是太神啦！
-                        </p>
-
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero
+                            tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus
+                            sequi ex eveniet!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
-
+                <!-- /.modal-content -->
             </div>
+            <!-- /.modal-dialog -->
         </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModal2Label">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sit ipsum quis magnam
+                            tenetur dignissimos quam molestiae explicabo hic veritatis nobis facilis ipsa saepe voluptas
+                            doloribus voluptates culpa nesciunt quidem?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModal3Label">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero
+                            tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus
+                            sequi ex eveniet!</p>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero
+                            tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus
+                            sequi ex eveniet!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal5Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo pariatur facilis
+                            molestiae recusandae vel facere et magnam praesentium veniam numquam eius distinctio dicta
+                            nostrum voluptatum doloribus. Optio quidem voluptatum quaerat.</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myLargeModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo pariatur facilis
+                            molestiae recusandae vel facere et magnam praesentium veniam numquam eius distinctio dicta
+                            nostrum voluptatum doloribus. Optio quidem voluptatum quaerat.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="mySmallModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="mySmallModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo pariatur facilis
+                            molestiae recusandae vel facere et magnam praesentium veniam numquam eius distinctio dicta
+                            nostrum voluptatum doloribus. Optio quidem voluptatum quaerat.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </div>
-
-
-
-
-
-
 
 
 
@@ -351,18 +231,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
 
 
 
     <script>
-
         // $('.pagination-inner a').on('click', function () {
         //     $(this).siblings().removeClass('pagination-active');
         //     $(this).addClass('pagination-active');
@@ -394,32 +273,73 @@
 
 
 
-/* JS for demo only */
-// var colors = ['1abc9c', '2c3e50', '2980b9', '7f8c8d', 'f1c40f', 'd35400', '27ae60'];
+        /* JS for demo only */
+        // var colors = ['1abc9c', '2c3e50', '2980b9', '7f8c8d', 'f1c40f', 'd35400', '27ae60'];
 
-// colors.each(function (color) {
-//   $$('.color-picker')[0].insert(
-//     '<div class="square" style="background: #' + color + '"></div>'
-//   );
-// });
+        // colors.each(function (color) {
+        //   $$('.color-picker')[0].insert(
+        //     '<div class="square" style="background: #' + color + '"></div>'
+        //   );
+        // });
 
-// $$('.color-picker')[0].on('click', '.square', function(event, square) {
-//   background = square.getStyle('background');
-//   $$('.custom-dropdown select').each(function (dropdown) {
-//     dropdown.setStyle({'background' : background});
-//   });
-// });
+        // $$('.color-picker')[0].on('click', '.square', function(event, square) {
+        //   background = square.getStyle('background');
+        //   $$('.custom-dropdown select').each(function (dropdown) {
+        //     dropdown.setStyle({'background' : background});
+        //   });
+        // });
 
-/*
- * Original version at
- * http://red-team-design.com/making-html-dropdowns-not-suck
- */ 
-
-
+        /*
+         * Original version at
+         * http://red-team-design.com/making-html-dropdowns-not-suck
+         */
 
 
 
 
+
+        function setModalMaxHeight(element) {
+            this.$element = $(element);
+            this.$content = this.$element.find('.modal-content');
+            var borderWidth = this.$content.outerHeight() - this.$content.innerHeight();
+            var dialogMargin = $(window).width() < 768 ? 20 : 60;
+            var contentHeight = $(window).height() - (dialogMargin + borderWidth);
+            var headerHeight = this.$element.find('.modal-header').outerHeight() || 0;
+            var footerHeight = this.$element.find('.modal-footer').outerHeight() || 0;
+            var maxHeight = contentHeight - (headerHeight + footerHeight);
+
+            this.$content.css({
+                'overflow': 'hidden'
+            });
+
+            this.$element
+                .find('.modal-body').css({
+                    'max-height': maxHeight,
+                    'overflow-y': 'auto'
+                });
+        }
+
+        $('.modal').on('show.bs.modal', function () {
+            $(this).show();
+            setModalMaxHeight(this);
+        });
+
+        $(window).resize(function () {
+            if ($('.modal.in').length == 1) {
+                setModalMaxHeight($('.modal.in'));
+            }
+        });
+
+        /* CodeMirror */
+        $('.code').each(function () {
+            var $this = $(this),
+                $code = $this.text(),
+                $mode = $this.data('language');
+
+            $this.empty();
+            $this.addClass('cm-s-bootstrap');
+            CodeMirror.runMode($code, $mode, this);
+        });
     </script>
 
 </body>
