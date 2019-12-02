@@ -56,26 +56,26 @@
                     </li>
 
                     <div class="accordion">
-                    <li class="nav-item">
-                        <a class="nav-link plus" data-toggle="collapse" data-target="#collapseOne" href="#">拜有保庇</a>
-                        <div id="collapseOne" class="collapse">
+                        <li class="nav-item">
+                            <a class="nav-link plus" data-toggle="collapse" data-target="#collapseOne" href="#">拜有保庇</a>
+                            <div id="collapseOne" class="collapse">
                                 <a href="">求愛情</a> <br>
                                 <a href="">求財運</a> <br>
                                 <a href="">求學業</a> <br>
                                 <a href="">求事業</a>
                             </div>
-                    </li>
-                </div>
+                        </li>
+                    </div>
 
                     <div class="accordion">
-                    <li class="nav-item">
-                        <a class="nav-link plus" href="#" data-toggle="collapse" data-target="#collapseTwo">廟語解煩</a>
-                        <div id="collapseTwo" class="collapse">
-                            <a href="">線上求籤</a> <br>
-                            <a href="">線上擲茭</a>
-                        </div>
-                    </li>
-                </div>
+                        <li class="nav-item">
+                            <a class="nav-link plus" href="#" data-toggle="collapse" data-target="#collapseTwo">廟語解煩</a>
+                            <div id="collapseTwo" class="collapse">
+                                <a href="">線上求籤</a> <br>
+                                <a href="">線上擲茭</a>
+                            </div>
+                        </li>
+                    </div>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">功德元滿</a>
                     </li>
@@ -90,11 +90,11 @@
     </div>
 
     <div class="container-fluid bannerContainer p-0">
-<div class="mv overlay">
-        <video class="video-fluid" autoplay muted loop autobuffer playsinline>
-            <source src="./img/LongshanTemple.mp4" type="video/mp4">
-        </video>
-    </div>
+        <div class="mv overlay">
+            <video class="video-fluid" autoplay muted loop autobuffer playsinline>
+                <source src="./img/Longshan Temple.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="title">
             <img src="./img/給我一個TEMPLE-logo.png" alt="img" class="imgUp">
             <p>GIVE ME A TEMPLE</p>
@@ -358,7 +358,14 @@
             easing: 'ease-in'
         });
 
-        
+        $(function(){
+        let plus = document.querySelectorAll('.plus');
+        console.log(plus)
+        plus.click(function () {
+            addClass('active');
+        });
+    })
+
     </script>
 
 </body>

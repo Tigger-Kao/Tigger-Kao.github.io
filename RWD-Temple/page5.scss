@@ -477,6 +477,10 @@ a {
             // }
           }
 
+          @media screen and (max-width: 768px){
+            padding: 0;
+          }
+
           .text {
             color: white;
             opacity: 0;
@@ -557,9 +561,10 @@ a {
             width: 100%;
             height: 45%;
             position: absolute;
-            bottom: -10%;
+            bottom: 0%;
             color: white;
-            padding: 3rem;
+            padding-top: 5rem;
+            padding-left: 2rem;
             font-size: 1.5rem;        
           }
         }
@@ -632,8 +637,21 @@ a {
     }
   }
 
-  .modal-experience {
-    // 評分呈現
+  #modal_experience {
+    // 訪客留言呈現
+
+        /* Hide a modal below a specific width */
+        @media (max-width: 768px) {
+          .modal-backdrop { 
+              display: none !important;
+          }
+          #myModalDiv {
+              display: none !important;
+          }
+          .modal-dialog {
+              display: none !important;
+          }
+      }
     .formBox {
       z-index: 1300;
       background-color: white;
