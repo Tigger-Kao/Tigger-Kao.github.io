@@ -63,6 +63,7 @@ a:hover {
 .container-fluid nav {
   opacity: 0.8;
   background-color: #021b06;
+  widows: 100%;
 }
 
 .container-fluid nav .navbar-brand {
@@ -70,22 +71,31 @@ a:hover {
   margin-left: 3rem;
 }
 
+@media screen and (max-width: 991px) {
+  .container-fluid nav .navbar-brand {
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container-fluid nav .navbar-brand img {
+    height: 45px;
+  }
+}
+
 .container-fluid nav .navbar-brand .logoText {
   margin: 10px;
 }
 
-@media screen and (max-width: 991px) {
-  .container-fluid nav .navbar-brand {
-    margin-left: 0;
-    padding: 0;
-  }
-  .container-fluid nav .navbar-brand .logoText {
-    margin-left: 1rem;
+@media screen and (max-width: 420px) {
+  .container-fluid nav .navbar-brand .logoText img {
+    height: 20px;
   }
 }
 
 .container-fluid nav .navList .navbar-nav {
-  width: 980px;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +111,49 @@ a:hover {
 
 .container-fluid nav .navList .navbar-nav .nav-item {
   font-size: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid nav .navList .navbar-nav {
+    height: 90vh;
+  }
+  .container-fluid nav .navList .navbar-nav .nav-item {
+    font-size: 22px;
+  }
+  .container-fluid nav .navList .navbar-nav .accordion .plus {
+    position: relative;
+  }
+  .container-fluid nav .navList .navbar-nav .accordion .plus:before {
+    background: white;
+    content: "";
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+  }
+  .container-fluid nav .navList .navbar-nav .accordion .plus:after {
+    background: #fffefe;
+    content: "";
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    width: 14px;
+  }
+  .container-fluid nav .navList .navbar-nav .accordion .plus.active:before {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .container-fluid nav .navList .navbar-nav .accordion .collapseTwo {
+    text-decoration: none;
+  }
 }
 
 .bannerContainer {

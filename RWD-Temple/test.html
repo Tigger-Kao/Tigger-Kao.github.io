@@ -227,15 +227,38 @@
 
 
 
+
+
+    <div class="container">
+        <ul class="acc">
+            <li>
+                
+                <button class="acc_ctrl">
+                    <h2>Holden</h2>
+                </button>
+
+                <div class="acc_panel">
+                    <p>GM Holden Ltd, commonly known as Holden, is an Australian automaker that operates in Australasia
+                        and is headquartered in Port Melbourne, Victoria. The company was founded in 1856 as a saddlery
+                        manufacturer in South Australia.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
     <!-- Bootstrap javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
 
@@ -340,6 +363,35 @@
             $this.addClass('cm-s-bootstrap');
             CodeMirror.runMode($code, $mode, this);
         });
+
+
+
+
+
+
+
+
+        $(function () {
+            $('.plus').on('click', function (e) {
+                e.preventDefault();
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).next()
+                        .stop()
+                        .slideUp(300);
+                } else {
+                    $(this).addClass('active');
+                    $(this).next()
+                        .stop()
+                        .slideDown(300);
+                }
+            });
+        });
+
+
+
+
+
     </script>
 
 </body>

@@ -61,28 +61,37 @@ a:hover {
   nav {
     opacity: 0.8;
     background-color: rgb(2, 27, 6);
+    widows: 100%;
 
     .navbar-brand {
       padding: 12px;
       margin-left: 3rem;
 
-      .logoText {
-        margin: 10px;
+      @media screen and (max-width: 991px) {
+        margin-left: 0px;
+        padding: 0px;
       }
 
-      @media screen and (max-width: 991px) {
-        margin-left: 0;
-        padding: 0;
+      @media screen and (max-width: 420px) {
+        img {
+          height: 45px;
+        }
+      }
 
-        .logoText {
-          margin-left: 1rem;
+      .logoText {
+        margin: 10px;
+
+        @media screen and (max-width: 420px) {
+          img {
+            height: 20px;
+          }
         }
       }
     }
 
     .navList {
       .navbar-nav {
-        width: 980px;
+        width: 65%;
         display: flex;
         justify-content: space-around;
 
@@ -93,6 +102,64 @@ a:hover {
         .nav-item {
           font-size: 15px;
         }
+
+        @media screen and (max-width: 991px) {
+          height: 90vh;
+          
+          .nav-item {
+            font-size: 22px;
+          }
+
+          .accordion {
+            .plus {
+              position: relative;
+            }
+
+            .plus:before {
+              background: white;
+              content: "";
+              height: 2px;
+              margin-right: 37px;
+              position: absolute;
+              right: 20%;
+              top: 50%;
+              -webkit-transform: rotate(90deg);
+              -moz-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              transform: rotate(90deg);
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -ms-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+              width: 14px;
+            }
+
+            .plus:after {
+              background: rgb(255, 254, 254);
+              content: "";
+              height: 2px;
+              margin-right: 37px;
+              position: absolute;
+              right: 20%;
+              top: 50%;
+              width: 14px;
+            }
+
+            .plus.active:before {
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+
+            .collapseTwo {
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
   }
@@ -101,25 +168,21 @@ a:hover {
 .bannerContainer {
   position: relative;
 
-  .mv{
-  @media screen and (max-width: 600px) {
-    max-width: 100%;
-    overflow: hidden;
-
-  }
-
-  .video-fluid {
-    width: 100%;
-    height: auto;
-
+  .mv {
     @media screen and (max-width: 600px) {
-      width: auto;
-      
+      max-width: 100%;
+      overflow: hidden;
     }
-    
-  }
-}
 
+    .video-fluid {
+      width: 100%;
+      height: auto;
+
+      @media screen and (max-width: 600px) {
+        width: auto;
+      }
+    }
+  }
 
   .title {
     color: white;
@@ -191,7 +254,7 @@ a:hover {
 
         .text_2 {
           @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
+            padding-left: $custom-gutter-width / 2;
             padding-right: $custom-gutter-width / 2;
           }
         }
@@ -206,7 +269,7 @@ a:hover {
         }
 
         @media screen and (max-width: 600px) {
-          padding-left: $custom-gutter-width /2
+          padding-left: $custom-gutter-width / 2;
         }
 
         h3 {
@@ -274,7 +337,7 @@ a:hover {
           }
 
           @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
+            padding-left: $custom-gutter-width / 2;
             padding-right: $custom-gutter-width / 2;
           }
 
@@ -302,8 +365,8 @@ a:hover {
 
         p {
           @media screen and (max-width: 600px) {
-            padding-left: $custom-gutter-width /2;
-            padding-right: $custom-gutter-width /2;
+            padding-left: $custom-gutter-width / 2;
+            padding-right: $custom-gutter-width / 2;
           }
         }
       }
@@ -317,7 +380,6 @@ a:hover {
   background-image: url(./img/紙質質感.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 
   .section3 {
     height: 850px;
@@ -364,7 +426,7 @@ a:hover {
       }
 
       .row {
-        @media screen and (max-width:600px){
+        @media screen and (max-width: 600px) {
           overflow: hidden;
         }
 
@@ -409,7 +471,6 @@ a:hover {
             position: absolute;
             text-align: center;
           }
-
         }
 
         h3 {
@@ -542,7 +603,6 @@ a:hover {
             @media screen and (max-width: 383px) {
               height: 200px;
             }
-
           }
 
           p {
@@ -818,10 +878,6 @@ a:hover {
 .section6 {
   background-color: rgb(36, 36, 36);
 }
-
-
-
-
 
 @media screen and (max-width: 767px) {
   .section4 .textGroup {
