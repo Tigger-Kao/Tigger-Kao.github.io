@@ -208,6 +208,12 @@ a {
   letter-spacing: 15px;
 }
 
+@media screen and (max-width: 420px) {
+  .bannerContainer .banner .arrow p {
+    font-size: 0.8rem;
+  }
+}
+
 .bannerContainer .banner .arrow .arrowButton {
   font-weight: 100;
   font-size: 6rem;
@@ -236,6 +242,12 @@ a {
   margin-top: 160px;
 }
 
+@media screen and (max-width: 420px) {
+  .section1 .modal-lg {
+    margin-top: 20px;
+  }
+}
+
 .section1 .modal-lg .formBox {
   z-index: 80;
   background-color: white;
@@ -260,6 +272,12 @@ a {
 .section1 .modal-lg .formBox .textBox {
   width: 100%;
   padding: 3rem;
+}
+
+@media screen and (max-width: 420px) {
+  .section1 .modal-lg .formBox .textBox {
+    padding: 1rem;
+  }
 }
 
 .section1 .modal-lg .formBox .textBox .title {

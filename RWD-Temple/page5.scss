@@ -190,6 +190,10 @@ a {
         font-size: 1.3rem;
         margin: 0;
         letter-spacing: 15px;
+
+        @media screen and (max-width: 420px){
+          font-size: 0.8rem;
+        }
       }
 
       .arrowButton {
@@ -219,6 +223,14 @@ a {
   .modal-lg {
     margin-top: 160px;
 
+    @media screen and (max-width: 420px) {
+      margin-top: 20px;
+    }
+
+    // .button{
+    //   padding-right: 50px;
+    // }
+
     .formBox {
       z-index: 80;
       background-color: white;
@@ -239,6 +251,10 @@ a {
         width: 100%;
         padding: 3rem;
 
+        @media screen and (max-width: 420px){
+          padding: 1rem;
+        }
+
         .title {
           font-size: 1.5rem;
           letter-spacing: 10px;
@@ -246,16 +262,6 @@ a {
 
           @media screen and (max-width: 991px) {
             margin-bottom: 1.5rem;
-
-            // &::after{
-            //   content: "";
-            //   width: 8.5rem;
-            //   height: 1px;
-            //   background-color: black;
-            //   position: absolute;
-            //   top: 100%;
-            //   left: 30%;
-            // }
           }
         }
 
