@@ -52,13 +52,14 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">廟宇旅廊<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#slideup">廟宇旅廊<span class="sr-only">(current)</span></a>
                     </li>
 
-                    <div class="accordion">
+                    <div class="accordion" id="plusCollapes">
                         <li class="nav-item">
-                            <a class="nav-link plus" data-toggle="collapse" data-target="#collapseOne" href="#">拜有保庇</a>
-                            <div id="collapseOne" class="collapse">
+                            <a class="nav-link plus " data-toggle="collapse" data-target="#collapse1" href="#slideIn"
+                                data-parent="#plusCollapes">拜有保庇</a>
+                            <div id="collapse1" class="collapse">
                                 <a href="">求愛情</a> <br>
                                 <a href="">求財運</a> <br>
                                 <a href="">求學業</a> <br>
@@ -69,18 +70,19 @@
 
                     <div class="accordion">
                         <li class="nav-item">
-                            <a class="nav-link plus" href="#" data-toggle="collapse" data-target="#collapseTwo">廟語解煩</a>
-                            <div id="collapseTwo" class="collapse">
+                            <a class="nav-link plus" href="#section4" data-toggle="collapse" data-target="#collapse2"
+                                data-parent="#plusCollapes">廟語解煩</a>
+                            <div id="collapse2" class="collapse">
                                 <a href="">線上求籤</a> <br>
                                 <a href="">線上擲茭</a>
                             </div>
                         </li>
                     </div>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">功德元滿</a>
+                        <a class="nav-link" href="javascript:;">功德元滿</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">有神麼事</a>
+                        <a class="nav-link" href="#section5">有神麼事</a>
                     </li>
 
                 </ul>
@@ -193,7 +195,7 @@
             </div>
         </section>
 
-        <section class="section4">
+        <section class="section4" id="section4">
             <div class="container-fluid">
                 <div class="backImg">
                     <h3>
@@ -234,7 +236,7 @@
     </section>
 
 
-    <section class="section5">
+    <section class="section5" id="section5">
 
         <div class="backimg text-white ">
 
@@ -358,13 +360,68 @@
             easing: 'ease-in'
         });
 
-        $(function(){
-        let plus = document.querySelectorAll('.plus');
-        console.log(plus)
-        plus.click(function () {
-            addClass('active');
-        });
-    })
+        // collapse 收合
+        (function ($) {
+            var $document = $(document);
+            var $body = $(document.body);
+
+            // Wrap everything in a DOM ready handler.
+            $document.ready(function () {
+
+                // Save the jQuery instances (for performance).
+                var $collapse1 = $('#collapse1');
+                var $collapse2 = $('#collapse2');
+
+                // Variable for saving which navbar collapse is currently open.
+                var $open = $();
+
+                // For performance reasons, bind evens directly on the document. jQuery
+                // allows you to pass a targeting selector between the event and handler
+                // so it will only call said handler when the event matches said selector.
+                $document
+                    // Bind "show" event for first navbar collapse.
+                    .on('show.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        $open = $(e.target);
+
+                        // Collapse the first if it's not the one that just opened.
+                        if (!$collapse1.is($open)) {
+                            $collapse1.collapse('hide');
+                        }
+                        // Collapse the second if it's not the one that just opened.
+                        else if (!$collapse2.is($open)) {
+                            $collapse2.collapse('hide');
+                        }
+
+                        // Add the body class.
+                        $body.addClass('overlay-is-navbar-collapse');
+                    })
+                    // Bind "hide" event for first navbar collapse.
+                    .on('hide.bs.collapse', $collapse1, function (e) {
+                        // Indicate that the first is open.
+                        var $hide = $(e.target);
+
+                        // Remove the first as the opened navbar collapse.
+                        if ($collapse1.is($hide) && $collapse1.is($open)) {
+                            $open = $();
+                        }
+                        // Remove the second as the opened navbar collapse.
+                        else if ($collapse2.is($hide) && $collapse2.is($open)) {
+                            $open = $();
+                        }
+
+                        // Remove the body class if there is no open navbar collapse.
+                        if (!$open[0]) {
+                            $body.removeClass('overlay-is-navbar-collapse');
+                        }
+                    });
+            });
+        })(window.jQuery);
+
+
+
+
+
 
     </script>
 

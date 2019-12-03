@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   font-family: "微軟正黑體";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -151,7 +152,7 @@ a:hover {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  .container-fluid nav .navList .navbar-nav .accordion .collapseTwo {
+  .container-fluid nav .navList .navbar-nav .accordion .collapseNav {
     text-decoration: none;
   }
 }
@@ -950,6 +951,9 @@ a:hover {
   .section4 .textGroup {
     display: none;
   }
+}
+
+@media screen and (max-width: 768px) {
   .section5 {
     display: none;
   }

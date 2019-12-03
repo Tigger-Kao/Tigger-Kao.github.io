@@ -2,6 +2,7 @@ $custom-gutter-width: 70px;
 
 * {
   font-family: "微軟正黑體";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -155,7 +156,7 @@ a:hover {
               transform: rotate(0deg);
             }
 
-            .collapseTwo {
+            .collapseNav {
               text-decoration: none;
             }
           }
@@ -883,7 +884,9 @@ a:hover {
   .section4 .textGroup {
     display: none;
   }
+}
 
+@media screen and (max-width: 768px){
   .section5 {
     // 768px時 隱藏 網頁版 有神麼事
     display: none;
