@@ -22,19 +22,18 @@ p {
 
 a {
   text-decoration: none;
-  scroll-behavior: smooth;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Libre Franklin', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
 }
 
 body #section1 {
@@ -87,19 +86,23 @@ body #section1 #container_banner .backGround .skillButton .buttonGroup {
           align-items: center;
 }
 
-body #section1 #container_banner .backGround .skillButton .buttonGroup .button {
+body #section1 #container_banner .backGround .skillButton .buttonGroup a {
   width: 30%;
-  text-align: center;
-  border: 1px solid whitesmoke;
-  padding: .2rem;
   margin-left: .2rem;
 }
 
-body #section1 #container_banner .backGround .skillButton .buttonGroup .button img {
+body #section1 #container_banner .backGround .skillButton .buttonGroup a .button {
+  width: 100%;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  padding: .2rem;
+}
+
+body #section1 #container_banner .backGround .skillButton .buttonGroup a .button img {
   width: 20%;
 }
 
-body #section1 #container_banner .backGround .skillButton .buttonGroup .button h3 {
+body #section1 #container_banner .backGround .skillButton .buttonGroup a .button h3 {
   margin-top: .2rem;
 }
 
@@ -471,15 +474,110 @@ body #section5 .footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: center;
 }
 
 body #section5 .footer p {
   font-size: .3rem;
+  width: 30%;
 }
 
 body #section5 .footer p b {
   background-color: rgba(32, 32, 32, 0.63);
   padding: .2rem;
   color: whitesmoke;
+}
+
+@media (max-width: 1835px) {
+  body #section4 .container_bottom .portfolio .ps .imgbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body #section4 .container_bottom .portfolio .ps .imgbox .imgT img {
+    width: 100%;
+    height: unset;
+  }
+  body #section4 .container_bottom .portfolio .ps .imgbox .img {
+    width: 50%;
+  }
+  body #section4 .container_bottom .portfolio .ps .imgbox .img img {
+    height: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 30px;
+  }
+  html body #section1 #container_banner .backGround .title {
+    margin-left: 2rem;
+    padding-left: 0;
+  }
+  html body #section1 #container_banner .myPhoto {
+    width: 6.5rem;
+    top: 40%;
+    margin-left: 2rem;
+  }
+  html body #section4 .container_bottom .portfolio .rwd .imgWeb {
+    width: 60%;
+  }
+  html body #section4 .container_bottom .portfolio .rwd .imgPhone {
+    width: 21.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 25px;
+  }
+  html body #section1 #container_banner .myPhoto {
+    width: 6.5rem;
+    top: 45%;
+  }
+}
+
+@media (max-width: 420px) {
+  html h1 {
+    font-size: 1.5rem;
+  }
+  html body #section1 #container_banner .backGround .skillButton .buttonGroup a .button img {
+    width: 50%;
+  }
+  html body #section1 #container_banner .backGround .skillButton .buttonGroup a .button h3 {
+    display: none;
+  }
+  html body #section1 #container_banner .backGround .title .myName a img {
+    display: none;
+  }
+  html body #section2 .container_body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body #section2 .container_body .leftSide {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  html body #section2 .container_body .rightSide {
+    width: 100%;
+  }
+  html body #section2 .container_body .leftSide .skillBar ul progress, html body #section2 .container_body .leftSide .skillBar ul progress[role] {
+    height: 1rem;
+  }
+  html body #section2 .container_body .rightSide .experience .etitle {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 50%;
+  }
+  html body #section2 .container_body .rightSide .experience .workEx .smallTitle ul {
+    padding-left: 1rem;
+  }
+  html body #section4 .container_bottom .portfolio .ps .imgbox .imgT img {
+    height: unset;
+    width: 100%;
+  }
+  html body #section5 .footer p {
+    font-size: 5px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

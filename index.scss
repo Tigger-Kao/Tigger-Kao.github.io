@@ -19,21 +19,20 @@ p {
     font-size: .4rem;
 }
 
-a{
+a {
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
+    scroll-behavior: smooth;
 }
 
 // start
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
 
     #section1 {
         width: 100%;
@@ -75,21 +74,27 @@ body {
                         justify-content: space-evenly;
                         align-items: center;
 
-                        .button {
+                        a {
                             width: 30%;
-                            text-align: center;
-                            border: 1px solid whitesmoke;
-                            padding: .2rem;
                             margin-left: .2rem;
 
-                            img {
-                                width: 20%;
-                            }
+                            .button {
+                                width: 100%;
+                                text-align: center;
+                                border: 1px solid whitesmoke;
+                                padding: .2rem;
 
-                            h3 {
-                                margin-top: .2rem;
+
+                                img {
+                                    width: 20%;
+                                }
+
+                                h3 {
+                                    margin-top: .2rem;
+                                }
                             }
                         }
+
 
                     }
                 }
@@ -251,9 +256,9 @@ body {
 
                             }
 
-                            ul{
+                            ul {
 
-                                li{
+                                li {
                                     font-size: .4rem;
                                     font-family: '微軟正黑體';
                                 }
@@ -419,19 +424,20 @@ body {
                     }
                 }
 
-                .ps{
+                .ps {
                     padding-top: 2.5rem;
                     // padding-bottom: 2.5rem;
                     width: 100%;
                     height: auto;
                     background-color: rgb(32, 32, 32);
 
-                    .imgbox{
+                    .imgbox {
                         display: flex;
                         width: 90%;
 
                         .img {
                             width: 30%;
+
                             img {
                                 height: 75%;
                                 padding-left: .2rem;
@@ -441,6 +447,7 @@ body {
 
                         .imgT {
                             width: 100%;
+
                             img {
                                 height: 75%;
                                 padding-left: .2rem;
@@ -454,16 +461,18 @@ body {
         }
     }
 
-    #section5{
-        .footer{
+    #section5 {
+        .footer {
             width: 100%;
             display: flex;
             justify-content: space-around;
+            text-align: center;
 
-            p{
+            p {
                 font-size: .3rem;
+                width: 30%;
 
-                b{
+                b {
                     background-color: rgba(32, 32, 32, 0.63);
                     padding: .2rem;
                     color: whitesmoke;
@@ -471,4 +480,118 @@ body {
             }
         }
     }
+}
+
+@media (max-width:1835px) {
+    body #section4 .container_bottom .portfolio .ps .imgbox{
+        flex-wrap: wrap;
+
+        .imgT img{
+            width: 100%;
+            height: unset;
+        }
+
+        .img{
+            width: 50%;
+
+            img{
+                height: unset;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    html {
+        font-size: 30px;
+
+        body #section1 #container_banner .backGround .title {
+            margin-left: 2rem;
+            padding-left: 0;
+        }
+
+        body #section1 #container_banner .myPhoto {
+            width: 6.5rem;
+            top: 40%;
+            margin-left: 2rem;
+        }
+
+        body #section4 .container_bottom .portfolio .rwd .imgWeb{
+            width: 60%;
+        }
+
+        body #section4 .container_bottom .portfolio .rwd .imgPhone{
+            width: 21.3%;
+        }
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 25px;
+
+        body #section1 #container_banner .myPhoto {
+            width: 6.5rem;
+            top: 45%;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    html{
+        h1{
+            font-size: 1.5rem;
+        }
+
+        body #section1 #container_banner .backGround .skillButton .buttonGroup a .button {
+            img{
+                width: 50%;
+            }
+
+            h3{
+               display: none; 
+            }
+            
+        }
+
+        body #section1 #container_banner .backGround .title .myName a img{
+            display: none;
+        }
+    
+        body #section2 .container_body{
+            flex-wrap: wrap;
+    
+            .leftSide{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .rightSide{
+                width: 100%;
+            }
+        }
+    
+        body #section2 .container_body .leftSide .skillBar ul progress, body #section2 .container_body .leftSide .skillBar ul progress[role]{
+            height: 1rem;
+        }
+    
+        body #section2 .container_body .rightSide .experience .etitle{
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        body #section2 .container_body .rightSide .experience .workEx .smallTitle ul{
+            padding-left: 1rem;
+        }
+
+        body #section4 .container_bottom .portfolio .ps .imgbox .imgT img{
+            height: unset;
+            width: 100%;
+        }
+        body #section5 .footer p{
+            font-size: 5px;
+        }
+    }
+    
+
 }
