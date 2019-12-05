@@ -1,102 +1,471 @@
 @charset "UTF-8";
-* {
-  font-family: "微軟正黑體";
+h1 {
+  margin: 0;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: .5em;
+}
+
+h3 {
+  font-size: .4rem;
+  font-weight: 300;
+  margin: 0%;
+  color: whitesmoke;
+}
+
+p {
+  font-size: .4rem;
+}
+
+a {
+  text-decoration: none;
   scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 50px;
-  font-weight: 300;
+body #section1 {
+  width: 100%;
+  background-color: #202020;
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: 340;
-  margin: 0;
+body #section1 #container_banner {
+  width: 100%;
+  height: auto;
+  color: #1a0b0b;
+  position: relative;
 }
 
-h3 {
-  font-size: 2rem;
-  font-family: "Noto Serif TC", serif;
+body #section1 #container_banner .backGround {
+  width: 100%;
+  height: 10rem;
+  background-image: url(./img/IMG_5708.jpg);
+  background-size: cover;
+  position: relative;
 }
 
-h4 {
-  font-size: 1.5em;
-  font-weight: 500;
-  font-family: "Noto Serif TC", serif;
-  margin: 0 0 30px 0;
+body #section1 #container_banner .backGround .title {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
-  h4 {
-    font-size: 1em;
-  }
+body #section1 #container_banner .backGround .skillButton {
+  background-color: rgba(32, 32, 32, 0.63);
+  width: 100%;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  color: whitesmoke;
 }
 
-p {
-  font-size: 1em;
-  line-height: 25px;
-  text-align: justify;
-  font-weight: 500;
+body #section1 #container_banner .backGround .skillButton .buttonGroup {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-a {
-  color: white;
-  margin: 0;
+body #section1 #container_banner .backGround .skillButton .buttonGroup .button {
+  width: 30%;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  padding: .2rem;
+  margin-left: .2rem;
 }
 
-.text_1 {
-  line-height: 35px;
+body #section1 #container_banner .backGround .skillButton .buttonGroup .button img {
+  width: 20%;
 }
 
-a:hover {
-  color: #aa4c4c;
+body #section1 #container_banner .backGround .skillButton .buttonGroup .button h3 {
+  margin-top: .2rem;
 }
 
-.container-fluid {
+body #section1 #container_banner .myPhoto {
+  width: 8rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: #202020 0.5rem solid;
+  position: absolute;
+  top: 30%;
+}
+
+body #section1 #container_banner .myPhoto img {
   width: 100%;
 }
 
-.container-fluid nav {
-  opacity: 0.8;
-  background-color: #021b06;
-  widows: 100%;
+body #section2 .container_body {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #202020;
 }
 
-.container-fluid nav .navbar-brand {
-  padding: 12px;
-  margin-left: 3rem;
+body #section2 .container_body .leftSide {
+  padding: .5rem;
+  width: 30%;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: .2rem;
+  color: #202020;
 }
 
-@media screen and (max-width: 991px) {
-  .container-fluid nav .navbar-brand {
-    margin-left: 0px;
-    padding: 0px;
+body #section2 .container_body .leftSide .skillBar h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+body #section2 .container_body .leftSide .skillBar ul {
+  list-style: none;
+  padding: .5rem;
+  margin: 0;
+}
+
+body #section2 .container_body .leftSide .skillBar ul progress,
+body #section2 .container_body .leftSide .skillBar ul progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: .5rem;
+  width: 100%;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-list {
+  list-style: none;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill {
+  margin-bottom: .1em;
+  position: relative;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill h3 {
+  color: #fff;
+  left: .5em;
+  position: absolute;
+  bottom: 0%;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill ::-webkit-progress-value {
+  width: 0px;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-1::-webkit-progress-value {
+  background: #0243bd;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-2::-webkit-progress-value {
+  background: #2c2c2c;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-3::-webkit-progress-value {
+  background: #ec9209;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-4::-webkit-progress-value {
+  background: #696969;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-5::-webkit-progress-value {
+  background: #d11414;
+}
+
+body #section2 .container_body .leftSide .skillBar ul .skill-6::-webkit-progress-value {
+  background: #4b7409;
+}
+
+@-webkit-keyframes bar-fill {
+  0% {
+    width: 0;
   }
 }
 
-@media screen and (max-width: 420px) {
-  .container-fluid nav .navbar-brand img {
-    height: 45px;
+@keyframes bar-fill {
+  0% {
+    width: 0;
   }
 }
 
-.container-fluid nav .navbar-brand .logoText {
-  margin: 10px;
-}
-
-@media screen and (max-width: 420px) {
-  .container-fluid nav .navbar-brand .logoText img {
-    height: 20px;
-  }
-}
-
-.container-fluid nav .navList .navbar-nav {
+body #section2 .container_body .rightSide {
   width: 65%;
+  padding: .5em;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: .2rem;
+}
+
+body #section2 .container_body .rightSide .experience .title {
+  text-align: center;
+}
+
+body #section2 .container_body .rightSide .experience .workEx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #section2 .container_body .rightSide .experience .workEx .smallTitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body #section2 .container_body .rightSide .experience .workEx .smallTitle h3 {
+  font-family: '微軟正黑體';
+  color: black;
+}
+
+body #section2 .container_body .rightSide .experience .workEx .smallTitle p {
+  margin: 0;
+  margin-left: .2rem;
+}
+
+body #section2 .container_body .rightSide .experience .workEx .smallTitle ul li {
+  font-size: .4rem;
+  font-family: '微軟正黑體';
+}
+
+body #section2 .container_body .rightSide .experience .workEx p {
+  margin: 0;
+}
+
+body #section3 .container_middle {
+  width: 100%;
+  height: 4rem;
+}
+
+body #section3 .container_middle .backImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/S__9494574_fade2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body #section3 .container_middle .backImg::before {
+  content: "TIGGER KAO";
+  background-color: rgba(253, 253, 253, 0.342);
+  padding: .5em;
+  color: #202020;
+  margin: auto;
+  font-family: 'Tomorrow', sans-serif;
+  position: absolute;
+  right: 47%;
+  top: 40%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform: translate(-1);
+          transform: translate(-1);
+  font-size: .5rem;
+}
+
+body #section4 .container_bottom {
+  background-color: #202020;
+}
+
+body #section4 .container_bottom .portfolio {
+  padding-top: 2.5rem;
+  width: 100%;
+}
+
+body #section4 .container_bottom .portfolio .rwd {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: auto;
+  background-color: #202020;
+  padding-bottom: 2.5rem;
+}
+
+body #section4 .container_bottom .portfolio .rwd .title {
+  width: 30%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform: translate(-1);
+          transform: translate(-1);
+  position: absolute;
+  right: -5%;
+}
+
+body #section4 .container_bottom .portfolio .rwd .imgWeb {
+  width: 50%;
+}
+
+body #section4 .container_bottom .portfolio .rwd .imgWeb img {
+  width: 90%;
+}
+
+body #section4 .container_bottom .portfolio .rwd .imgPhone {
+  width: 17.7%;
+}
+
+body #section4 .container_bottom .portfolio .rwd .imgPhone img {
+  width: 90%;
+}
+
+body #section4 .container_bottom .portfolio .commercial {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  position: relative;
+  height: auto;
+  background-color: white;
+}
+
+body #section4 .container_bottom .portfolio .commercial .title {
+  width: 35%;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform: translate(-1);
+          transform: translate(-1);
+  position: absolute;
+  left: 0;
+  top: 13%;
+}
+
+body #section4 .container_bottom .portfolio .commercial .title h1 {
+  color: rgba(32, 32, 32, 0.63);
+}
+
+body #section4 .container_bottom .portfolio .commercial .img {
+  width: 35%;
+}
+
+body #section4 .container_bottom .portfolio .commercial .img img {
+  width: 95%;
+  margin-top: 10px;
+}
+
+body #section4 .container_bottom .portfolio .photos {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  position: relative;
+  height: auto;
+  background-color: #202020;
+}
+
+body #section4 .container_bottom .portfolio .photos .title {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform: translate(-1);
+          transform: translate(-1);
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+body #section4 .container_bottom .portfolio .photos .photoContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #section4 .container_bottom .portfolio .photos .photoContainer .img {
+  width: 30%;
+}
+
+body #section4 .container_bottom .portfolio .photos .photoContainer .img img {
+  width: 100%;
+  padding-left: .2rem;
+  padding-bottom: .2rem;
+}
+
+body #section4 .container_bottom .portfolio .ps {
+  padding-top: 2.5rem;
+  width: 100%;
+  height: auto;
+  background-color: #202020;
+}
+
+body #section4 .container_bottom .portfolio .ps .imgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+}
+
+body #section4 .container_bottom .portfolio .ps .imgbox .img {
+  width: 30%;
+}
+
+body #section4 .container_bottom .portfolio .ps .imgbox .img img {
+  height: 75%;
+  padding-left: .2rem;
+  padding-bottom: .2rem;
+}
+
+body #section4 .container_bottom .portfolio .ps .imgbox .imgT {
+  width: 100%;
+}
+
+body #section4 .container_bottom .portfolio .ps .imgbox .imgT img {
+  height: 75%;
+  padding-left: .2rem;
+  padding-bottom: .2rem;
+}
+
+body #section5 .footer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,858 +473,13 @@ a:hover {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 1300px) {
-  .container-fluid nav .navList .navbar-nav {
-    max-width: 25rem;
-  }
+body #section5 .footer p {
+  font-size: .3rem;
 }
 
-.container-fluid nav .navList .navbar-nav .nav-item {
-  font-size: 15px;
-}
-
-@media screen and (max-width: 991px) {
-  .container-fluid nav .navList .navbar-nav {
-    height: 90vh;
-  }
-  .container-fluid nav .navList .navbar-nav .nav-item {
-    font-size: 22px;
-  }
-  .container-fluid nav .navList .navbar-nav .accordion .plus {
-    position: relative;
-  }
-  .container-fluid nav .navList .navbar-nav .accordion .plus:before {
-    background: white;
-    content: "";
-    height: 2px;
-    margin-right: 37px;
-    position: absolute;
-    right: 20%;
-    top: 50%;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    width: 14px;
-  }
-  .container-fluid nav .navList .navbar-nav .accordion .plus:after {
-    background: #fffefe;
-    content: "";
-    height: 2px;
-    margin-right: 37px;
-    position: absolute;
-    right: 20%;
-    top: 50%;
-    width: 14px;
-  }
-  .container-fluid nav .navList .navbar-nav .accordion .plus.active:before {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  .container-fluid nav .navList .navbar-nav .accordion .collapseNav {
-    text-decoration: none;
-  }
-}
-
-.bannerContainer {
-  position: relative;
-}
-
-@media screen and (max-width: 600px) {
-  .bannerContainer .mv {
-    max-width: 100%;
-    overflow: hidden;
-  }
-}
-
-.bannerContainer .mv .video-fluid {
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .bannerContainer .mv .video-fluid {
-    width: auto;
-  }
-}
-
-.bannerContainer .title {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  -webkit-transform: translate(0, -55%);
-          transform: translate(0, -55%);
-}
-
-.bannerContainer .title img {
-  height: 65px;
-}
-
-@media screen and (max-width: 600px) {
-  .bannerContainer .title img {
-    height: 30px;
-  }
-}
-
-.bannerContainer .title p {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  margin-top: 20px;
-  opacity: 0.7;
-  letter-spacing: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .bannerContainer .title p {
-    font-size: 0.5em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .bannerContainer .title p {
-    letter-spacing: 5px;
-  }
-}
-
-.section1 {
-  padding: 270px 0 150px 0;
-  background-image: url(./img/bg-leftImg.png);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-}
-
-@media screen and (max-width: 1300px) {
-  .section1 {
-    padding: 50px 0 150px 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section1 {
-    background-size: 0%;
-  }
-}
-
-.section1 .container-fluid {
-  width: 84%;
-  height: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .section1 .container-fluid {
-    width: 100%;
-  }
-}
-
-.section1 .container-fluid .row .img {
-  background-image: url(./img/台北市艋舺龍山寺.jpg);
-  width: 100%;
-  height: 45vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 30%;
-  padding: 0;
-  margin-bottom: 62px;
-}
-
-@media screen and (max-width: 600px) {
-  .section1 .container-fluid .row .img .text_2 {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
-.section1 .container-fluid .row .text-group {
-  padding-left: 140px;
-  padding-right: 35px;
-}
-
-@media screen and (max-width: 1300px) {
-  .section1 .container-fluid .row .text-group {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section1 .container-fluid .row .text-group {
-    padding-left: 35px;
-  }
-}
-
-.section1 .container-fluid .row .text-group h3 .big {
-  font-size: 50px;
-  font-weight: 540;
-  font-family: "Noto Serif TC", serif;
-  color: #6e1420;
-}
-
-.section2 {
-  padding-top: 100px;
-  background-image: url(./img/bg-rightImg.jpg);
-  background-size: 11%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 1%;
-}
-
-@media screen and (max-width: 600px) {
-  .section2 {
-    background-size: 0%;
-  }
-}
-
-.section2 .container-fluid {
-  width: 100%;
-  padding: 0;
-}
-
-.section2 .container-fluid .row {
-  margin-right: 7rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .section2 .container-fluid .row {
-    margin-right: 0;
-  }
-}
-
-.section2 .container-fluid .row .img {
-  padding: 0;
-}
-
-.section2 .container-fluid .row .img .imgUp {
-  width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .section2 .container-fluid .row .img .imgUp {
-    width: 0;
-  }
-}
-
-.section2 .container-fluid .row .text-group {
-  padding-left: 3.5rem;
-  padding-right: 1.5rem;
-}
-
-@media screen and (max-width: 600px) {
-  .section2 .container-fluid .row .text-group {
-    padding: 0;
-  }
-}
-
-.section2 .container-fluid .row .text-group h3 {
-  margin-bottom: 55px;
-}
-
-@media screen and (max-width: 1024px) {
-  .section2 .container-fluid .row .text-group h3 {
-    margin-top: 3em;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section2 .container-fluid .row .text-group h3 {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
-.section2 .container-fluid .row .text-group h3 .big {
-  font-size: 50px;
-  font-weight: 540;
-  font-family: "Noto Serif TC", serif;
-  color: #6e1420;
-}
-
-.section2 .container-fluid .row .text-group .img {
-  width: 100%;
-  height: 350px;
-  background-image: url(./img/img-section2right.jpeg);
-  background-size: cover;
-  background-position: bottom;
-}
-
-@media screen and (max-width: 600px) {
-  .section2 .container-fluid .row .text-group .img {
-    background-image: url(./img/43735682692_2eb6f7fae3_b.jpg);
-    background-position: center;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section2 .container-fluid .row .text-group p {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
-.section34 {
-  width: 100%;
-  height: auto;
-  background-image: url(./img/紙質質感.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.section34 .section3 {
-  height: 850px;
-  padding: 180px 0 0 0;
-}
-
-@media screen and (max-width: 1024px) {
-  .section34 .section3 {
-    height: 700px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section3 {
-    padding: 50px 0 0 0;
-    height: 500px;
-  }
-}
-
-.section34 .section3 .container-fluid {
-  width: 65%;
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section3 .container-fluid {
-    width: 95%;
-  }
-}
-
-.section34 .section3 .container-fluid .title {
-  padding-bottom: 180px;
-}
-
-@media screen and (max-width: 1024px) {
-  .section34 .section3 .container-fluid .title {
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section3 .container-fluid .title {
-    padding-bottom: 30px;
-  }
-}
-
-.section34 .section3 .container-fluid .title h3 {
-  letter-spacing: 0.5rem;
-  font-size: 30px;
-}
-
-.section34 .section3 .container-fluid .title h3 .big {
-  font-size: 50px;
-  font-weight: 540;
-  font-family: "Noto Serif TC", serif;
-  color: #6e1420;
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section3 .container-fluid .row {
-    overflow: hidden;
-  }
-}
-
-.section34 .section3 .container-fluid .row img {
-  width: 100%;
-}
-
-.section34 .section4 .container-fluid {
-  width: 100%;
-  padding: 0;
-}
-
-.section34 .section4 .container-fluid .backImg {
-  width: 100%;
-  height: 40vh;
-  position: relative;
-  background-image: url(./img/bg-leftImgSection4.png);
-  background-repeat: no-repeat;
-  background-size: 40%;
-}
-
-@media screen and (max-width: 1200px) {
-  .section34 .section4 .container-fluid .backImg {
-    height: 30vh;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section4 .container-fluid .backImg {
-    background-image: none;
-    height: 8vh;
-  }
-  .section34 .section4 .container-fluid .backImg::before {
-    content: "廟宇解煩";
-    width: 100%;
-    height: 8vh;
-    font-size: 1.5rem;
-    font-family: "Noto Serif TC", serif;
-    color: white;
-    background-color: #021b06;
-    position: absolute;
-    text-align: center;
-  }
-}
-
-.section34 .section4 .container-fluid .backImg h3 {
-  letter-spacing: 10px;
-  font-size: 30px;
-  position: absolute;
-  top: 65%;
-  left: 45.5%;
-}
-
-.section34 .section4 .container-fluid .backImg h3 .big {
-  font-size: 50px;
-  font-weight: 540;
-  font-family: "Noto Serif TC", serif;
-  color: #6e1420;
-}
-
-@media screen and (max-width: 600px) {
-  .section34 .section4 .container-fluid .backImg h3 {
-    display: none;
-  }
-}
-
-.section34 .section4 .container-fluid .row {
-  width: 100%;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: 130%;
-  background-position: center;
-  position: relative;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.section34 .section4 .container-fluid .row::after {
-  content: "";
-  background-color: black;
-  opacity: 0;
-  height: 100%;
-  width: 60%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.section34 .section4 .container-fluid .row .textGroup {
-  padding: 0 100px;
-  position: relative;
-  z-index: 3;
-}
-
-@media screen and (max-width: 1300px) {
-  .section34 .section4 .container-fluid .row .textGroup {
-    padding: 0 30px;
-  }
-}
-
-.section34 .section4 .container-fluid .row .textGroup h4 {
-  position: relative;
-}
-
-@media screen and (max-width: 1300px) {
-  .section34 .section4 .container-fluid .row .textGroup p {
-    line-height: 25px;
-  }
-}
-
-.section34 .section4 .container-fluid .row .imgT {
-  padding: 0;
-  position: relative;
-}
-
-.section34 .section4 .container-fluid .row .imgT .img {
-  background-image: url(./img/竹籤及籤文.jpg);
-  width: 100%;
-  height: 460px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 767px) {
-  .section34 .section4 .container-fluid .row .imgT .img {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 383px) {
-  .section34 .section4 .container-fluid .row .imgT .img {
-    height: 200px;
-  }
-}
-
-.section34 .section4 .container-fluid .row .imgT p {
-  color: white;
-  font-family: "Noto Serif TC", serif;
-  font-size: 4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 30;
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .section34 .section4 .container-fluid .row .imgT p {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .section34 .section4 .container-fluid .row .imgT p {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 383px) {
-  .section34 .section4 .container-fluid .row .imgT p {
-    font-size: 2rem;
-  }
-}
-
-.section34 .section4 .container-fluid .row .imgB {
-  padding: 0;
-  position: relative;
-}
-
-.section34 .section4 .container-fluid .row .imgB .img {
-  background-image: url(./img/擲茭.jpg);
-  width: 100%;
-  height: 460px;
-  background-size: 130%;
-  background-position: center;
-  background-position-x: 70%;
-  background-position-y: 48%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-@media screen and (max-width: 767px) {
-  .section34 .section4 .container-fluid .row .imgB .img {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 383px) {
-  .section34 .section4 .container-fluid .row .imgB .img {
-    height: 200px;
-  }
-}
-
-.section34 .section4 .container-fluid .row .imgB p {
-  color: white;
-  font-family: "Noto Serif TC", serif;
-  font-size: 4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 30;
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .section34 .section4 .container-fluid .row .imgB p {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .section34 .section4 .container-fluid .row .imgB p {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 383px) {
-  .section34 .section4 .container-fluid .row .imgB p {
-    font-size: 2rem;
-  }
-}
-
-.section34 .section4 .rowT:hover {
-  color: white;
-  background-image: url(./img/竹籤及籤文.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-  background-size: cover;
-}
-
-.section34 .section4 .rowT:hover .img {
-  opacity: 0;
-}
-
-.section34 .section4 .rowT:hover::after {
-  opacity: 0.7;
-  z-index: 2;
-  width: 100%;
-}
-
-.section34 .section4 .rowB:hover {
-  color: white;
-  background-image: url(./img/擲茭.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.section34 .section4 .rowB:hover .img {
-  opacity: 0;
-}
-
-.section34 .section4 .rowB:hover::after {
-  opacity: 0.7;
-  z-index: 2;
-  width: 100%;
-}
-
-.section5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 200px 0;
-}
-
-.section5 .backimg {
-  z-index: 99;
-  width: 20%;
-  height: 280px;
-  position: relative;
-  background-image: url(./img/157414743357485.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 80%;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .backimg {
-    width: 16%;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-}
-
-.section5 .backimg span {
-  position: absolute;
-  top: 130%;
-  right: 6%;
-  cursor: pointer;
-}
-
-.section5 .container-fluid {
-  width: 100%;
-  z-index: 1;
-  margin-right: 3%;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid {
-    margin-right: 0%;
-  }
-}
-
-.section5 .container-fluid .row {
-  position: relative;
-}
-
-.section5 .container-fluid .row .textBox {
-  z-index: 99;
-  padding: 0;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid .row .textBox {
-    padding: 0;
-  }
-}
-
-.section5 .container-fluid .row .textBox .backImg {
-  background-image: url(./img/台北市艋舺龍山寺.jpg);
-  background-size: cover;
-  background-position: center;
-  max-width: 90%;
-  height: 108%;
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask {
-  background-color: rgba(14, 14, 14, 0);
-  padding: 20px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  height: 100%;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid .row .textBox .backImg .mask {
-    padding: 50px;
-  }
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask:hover {
-  background-color: rgba(14, 14, 14, 0.61);
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text {
-  color: white;
-  opacity: 0;
-  padding: 20px;
-  border: #fdfdfd solid 1px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  height: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid .row .textBox .backImg .mask .text {
-    padding: 50px;
-  }
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text hr {
-  background-color: white;
-  width: 30%;
-  height: 2px;
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text .ellipsis {
-  text-align: justify;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text:hover {
-  opacity: 1;
-}
-
-.section5 .container-fluid .row .textBox .backImg {
-  background-image: url(./img/台北市艋舺龍山寺.jpg);
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: 1px 1px 10px rgba(51, 51, 102, 0.5);
-          box-shadow: 1px 1px 10px rgba(51, 51, 102, 0.5);
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask {
-  background-color: rgba(14, 14, 14, 0);
-  padding: 20px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid .row .textBox .backImg .mask {
-    padding: 10px;
-  }
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask:hover {
-  background-color: rgba(14, 14, 14, 0.61);
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text {
-  color: white;
-  opacity: 0;
-  padding: 35px 20px 0px 20px;
-  border: #fdfdfd solid 1px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-@media screen and (max-width: 1024px) {
-  .section5 .container-fluid .row .textBox .backImg .mask .text {
-    padding: 10px;
-  }
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text hr {
-  background-color: white;
-  width: 30%;
-  height: 2px;
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text .ellipsis {
-  text-align: justify;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-}
-
-.section5 .container-fluid .row .textBox .backImg .mask .text:hover {
-  opacity: 1;
-}
-
-.section5 .container-fluid .row::before {
-  content: "";
-  width: 100%;
-  height: 550px;
-  background-color: #222222;
-  z-index: 1;
-  position: absolute;
-  right: 95%;
-  top: -11%;
-}
-
-.section5_phone {
-  text-align: center;
-}
-
-.section5_phone img {
-  width: 70%;
-  margin-top: 4rem;
-}
-
-.section5_phone button {
-  margin: 3.5rem auto;
-  -webkit-box-shadow: 0 0 0.7em black;
-          box-shadow: 0 0 0.7em black;
-}
-
-.section6 {
-  background-color: #242424;
-}
-
-@media screen and (max-width: 767px) {
-  .section4 .textGroup {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section5 {
-    display: none;
-  }
+body #section5 .footer p b {
+  background-color: rgba(32, 32, 32, 0.63);
+  padding: .2rem;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=index.css.map */
