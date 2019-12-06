@@ -286,8 +286,8 @@ body {
             .backImg {
                 width: 100%;
                 height: 100%;
-                background-image: url(./img/S__9494574_fade2.jpg);
-                background-size: contain;
+                background-image: url(./img/S__9494574_fade.jpg);
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: bottom;
                 background-attachment: fixed;
@@ -433,14 +433,14 @@ body {
 
                     .imgbox {
                         display: flex;
-                        width: 90%;
+                        width: 100%;
 
                         .img {
-                            width: 30%;
+                            width: 50%;
 
                             img {
                                 height: 75%;
-                                padding-left: .2rem;
+                                // padding-left: .2rem;
                                 padding-bottom: .2rem;
                             }
                         }
@@ -450,7 +450,7 @@ body {
 
                             img {
                                 height: 75%;
-                                padding-left: .2rem;
+                                // padding-left: .2rem;
                                 padding-bottom: .2rem;
                             }
                         }
@@ -540,9 +540,9 @@ body {
 
 @media (max-width: 420px){
     html{
-        h1{
-            font-size: 1.5rem;
-        }
+        // h1{
+        //     font-size: 1.5rem;
+        // }
 
         body #section1 #container_banner .backGround .skillButton .buttonGroup a .button {
             img{
@@ -593,5 +593,4 @@ body {
         }
     }
     
-
 }
