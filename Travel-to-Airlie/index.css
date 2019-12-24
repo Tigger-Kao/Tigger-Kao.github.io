@@ -958,7 +958,7 @@ footer p {
   padding: 20px 0;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     height: 100vh;
   }
@@ -1016,6 +1016,14 @@ footer p {
   #activity .container .lightBox .info {
     height: 15vh;
   }
+  #food .container .foodContent .rightSide .items .item {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  #hostle .hostle_container .hostleContent .leftSide .items_hostle .item {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
   #transfer .transfer_container {
     min-height: 60vh;
   }
@@ -1045,7 +1053,7 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 44px;
   }
@@ -1203,7 +1211,7 @@ footer p {
   }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
   h1 {
     font-size: 28px;
     text-shadow: 0.05em 0.05em 0.2em #15222e;
