@@ -99,6 +99,10 @@ h4 {
         width: 30%;
         margin-right: 150px;
         text-align: justify;
+
+        .mobileText {
+          display: none;
+        }
       }
     }
   }
@@ -185,10 +189,10 @@ h4 {
   .container {
     width: 100%;
     height: 100vh;
-    // background-image: url(./img/WhitsundayIslandBeach.jpg);
+    // background-image: url(./img/Artboard.png);
     // background-size: cover;
     // background-position: center;
-    background-color: gray;
+    background-color: rgb(21, 34, 46);
     position: relative;
 
     &.opacity {
@@ -210,7 +214,7 @@ h4 {
       overflow: hidden;
       position: absolute;
       left: 20%;
-      cursor: pointer;      
+      cursor: pointer;
 
       .row {
         width: 100%;
@@ -337,11 +341,12 @@ h4 {
           color: white;
           display: flex;
           align-items: center;
+          justify-content: center;
 
           p {
             font-size: 32px;
             letter-spacing: 2px;
-            padding-left: 10%;
+            // padding-left: 10%;
           }
         }
       }
@@ -368,52 +373,52 @@ h4 {
       }
     }
 
-    #flight{
+    #flight {
       background-color: white;
 
-      .back{
+      .back {
         background-image: url(./img/GSL_Aviation.jpg);
       }
     }
 
-    #ship{
+    #ship {
       background-color: rgb(139, 197, 62);
       color: white;
 
-      .back{
+      .back {
         background-image: url(./img/cruise-whitsundays-activity-platform.jpg);
       }
     }
 
-    #sailing{
+    #sailing {
       background-color: rgb(21, 36, 76);
       color: white;
-      .back{
+      .back {
         background-image: url(./img/S__9699345.jpg);
         background-position: center;
       }
     }
 
-    #skydiving{
+    #skydiving {
       background-color: rgb(26, 131, 197);
       color: white;
-      .back{
+      .back {
         background-image: url(./img/IMG-4766.jfif);
       }
     }
 
-    #jetski{
+    #jetski {
       background-color: rgb(252, 240, 1);
 
-      .back{
+      .back {
         background-image: url(./img/jetski.jpg);
       }
     }
 
-    #scubadiving{
-      background-color: #0095D7;
+    #scubadiving {
+      background-color: #0095d7;
       color: white;
-      .back{
+      .back {
         background-image: url(./img/Diving.jpg);
         background-position: right;
       }
@@ -456,10 +461,19 @@ h4 {
             justify-content: center;
             align-items: center;
             margin: 15px 0;
+            cursor: pointer;
 
             img {
               width: 50%;
             }
+          }
+
+          .pagination_top {
+            text-align: center;
+            color: chocolate;
+            font-family: "Raleway", sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
           }
         }
 
@@ -483,7 +497,6 @@ h4 {
           width: 100%;
           display: flex;
           // flex-grow: 1;
-
           white-space: nowrap;
           cursor: pointer;
           transition: all 0.2s;
@@ -492,11 +505,12 @@ h4 {
           position: relative;
           overflow: hidden;
 
-          .item{
+          .item {
             margin: 0 10px;
             width: 250px;
             height: auto;
             background-color: chocolate;
+            transform: translateX(-300px);
 
             img {
               // width: 100%;
@@ -507,8 +521,16 @@ h4 {
               width: 100%;
               height: 120px;
               color: white;
-              padding: 0 20px;
+              padding: 10px 20px;
               box-sizing: border-box;
+
+              h4 {
+                font-weight: 300;
+              }
+
+              .price {
+                text-align: right;
+              }
             }
 
             .active {
@@ -517,7 +539,6 @@ h4 {
               transform: scale(1);
             }
           }
-          
         }
       }
     }
@@ -546,7 +567,7 @@ h4 {
       overflow-x: hidden;
 
       .leftSide {
-        width: 75%;
+        width: 70%;
         margin-top: 50px;
 
         .items_hostle {
@@ -567,6 +588,7 @@ h4 {
             width: 250px;
             height: auto;
             background-color: rgb(128, 168, 89);
+            transform: translateX(-300px);
 
             img {
               // width: 100%;
@@ -577,8 +599,16 @@ h4 {
               width: 100%;
               height: 120px;
               color: white;
-              padding: 0 10px;
+              padding: 10px 20px;
               box-sizing: border-box;
+
+              h4 {
+                font-weight: 300;
+              }
+
+              .price {
+                text-align: right;
+              }
             }
 
             .active {
@@ -610,10 +640,19 @@ h4 {
             justify-content: center;
             align-items: center;
             margin: 15px 0;
+            cursor: pointer;
 
             img {
               width: 50%;
             }
+          }
+
+          .pagination_bottom {
+            text-align: center;
+            color: #208039;
+            font-family: "Raleway", sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
           }
         }
 
@@ -637,19 +676,24 @@ h4 {
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
-    background-color: rgb(179, 198, 212);
+    background-color: rgb(21, 34, 46);
+    // background-image: url(./img/Artboard.png);
     box-sizing: border-box;
 
     .title {
       text-align: center;
       margin-left: 90px;
+
+      h2 {
+        color: whitesmoke;
+      }
     }
 
     .content {
       margin-left: 100px;
       margin-top: 50px;
       display: flex;
-      color: rgb(30, 72, 112);
+      color: whitesmoke;
 
       .leftSide {
         width: 25%;
@@ -668,7 +712,7 @@ h4 {
         }
 
         .plane.active {
-          color: rgb(0, 34, 75);
+          color: rgb(193, 255, 47);
           transform: scale(1.2);
           position: relative;
 
@@ -682,7 +726,7 @@ h4 {
         }
 
         .train.active {
-          color: rgb(188, 28, 36);
+          color: rgb(168, 0, 8);
           transform: scale(1.2);
 
           &::after {
@@ -695,7 +739,7 @@ h4 {
         }
 
         .bus.active {
-          color: rgb(0, 143, 206);
+          color: rgb(0, 106, 206);
           transform: scale(1.2);
 
           &::after {
@@ -731,14 +775,14 @@ h4 {
             margin-bottom: 30px;
             h4 {
               position: relative;
-              color: rgb(12, 49, 83);
+              color: whitesmoke;
               margin-bottom: 14px;
 
               &::before {
                 content: "";
                 width: 20px;
                 height: 20px;
-                background-color: rgb(0, 0, 0);
+                background-color: whitesmoke;
                 border-radius: 50%;
                 position: absolute;
                 left: -5%;
@@ -758,6 +802,9 @@ h4 {
 
 // Site Map
 #sitemap {
+  .title{
+    display: none;
+  }
   .container {
     width: 100%;
     height: 50vh;
@@ -775,6 +822,8 @@ h4 {
           color: black;
           font-size: 20px;
           line-height: 50px;
+          font-weight: 600;
+          padding: 0 10px;
         }
       }
     }
@@ -789,25 +838,24 @@ h4 {
         .row {
           width: 100%;
           display: flex;
-          
 
           .logo {
             width: 50%;
             border-right: solid black 2px;
-            background-color: rgb(94, 94, 94);
+            background-color: #004f77;
             display: flex;
             padding: 10px;
             box-sizing: border-box;
 
             img {
-              width: 100%;
-              align-self: center;
+              width: 70%;
+              margin: auto;
             }
           }
 
           .address {
             padding: 20px;
-            h4{
+            h4 {
               color: black;
               font-size: 24px;
             }
@@ -846,12 +894,702 @@ h4 {
 // Footer
 footer {
   width: 100%;
-  background-color: rgb(0, 113, 139);
+  background-color: #004f77;
   text-align: center;
 
   p {
     color: white;
     margin: 0;
     padding: 20px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 100vh;
+    .backImg {
+      height: 100vh;
+      overflow-y: hidden;
+      #banner {
+        height: 50vh;
+
+        .title {
+          top: 15%;
+        }
+      }
+
+      #intro {
+        height: 50vh;
+      }
+    }
+  }
+
+  #hotSpot {
+    .container {
+      height: 50vh;
+      overflow-y: hidden;
+
+      .imgContent {
+        .img {
+          height: 50vh;
+        }
+      }
+    }
+  }
+
+  #activity {
+    .container {
+      height: 50vh;
+
+      &.opacity {
+        height: 50vh;
+      }
+
+      #allActivity {
+        height: 40vh;
+        padding-top: 5vh;
+
+        .row {
+          height: 20vh;
+
+          .img {
+            height: 20vh;
+            &::before {
+              height: 20vh;
+            }
+
+            &:hover:before {
+              height: 20vh;
+            }
+          }
+        }
+      }
+
+      .lightBox {
+        .back {
+          height: 25vh;
+
+          .title {
+            height: 12.5vh;
+
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .info {
+          height: 15vh;
+        }
+      }
+    }
+  }
+
+  #transfer {
+    .transfer_container {
+      min-height: 60vh;
+
+      .content {
+        font-size: 14px;
+        .leftSide {
+          .plane.active {
+            &::after {
+              font-size: 16px;
+            }
+          }
+
+          .train.active {
+            &::after {
+              font-size: 16px;
+            }
+          }
+
+          .bus.active {
+            &::after {
+              font-size: 16px;
+            }
+          }
+
+          .taxi.active {
+            &::after {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sitemap {
+    .container {
+      height: 30vh;
+
+      .leftSide {
+        .link {
+          margin-left: 250px;
+        }
+      }
+
+      .rightSide {
+        .info {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .container {
+    .backImg {
+      #banner {
+        .title {
+          left: 15%;
+
+          h3 {
+            &::after {
+              width: 50px;
+              height: 50px;
+              right: -25%;
+            }
+          }
+        }
+      }
+
+      #intro {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 10%;
+
+        .img {
+          margin-left: 0;
+          width: 50%;
+        }
+
+        article {
+          width: 50%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  #hotSpot {
+    .container {
+      height: 100vh;
+      background-color: rgb(0, 103, 112);
+      .imgContent {
+        margin: 0;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 100vh;
+
+        .img {
+          width: 100%;
+          height: 30vh;
+
+          &::before {
+            height: 30vh;
+          }
+          &:hover:before {
+            height: 30vh;
+          }
+
+          .circle {
+            width: 170px;
+            height: 170px;
+            .text {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #activity {
+    .container {
+      #allActivity {
+        width: 80%;
+        left: 0;
+        position: unset;
+      }
+
+      .lightBox {
+        left: 50%;
+
+        .back {
+          .title {
+            justify-content: center;
+            p {
+              font-size: 20px;
+              padding-left: 0;
+            }
+          }
+        }
+
+        .info {
+          .textarea {
+            width: 80%;
+            letter-spacing: unset;
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #food {
+    .container {
+      .title {
+        margin-left: 0;
+      }
+
+      .foodContent {
+        .leftSide {
+          width: 25%;
+        }
+
+        .rightSide {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  #hostle {
+    .hostle_container {
+      margin-left: 0;
+
+      .title {
+        margin: unset;
+        margin-top: 150px;
+      }
+    }
+  }
+
+  #transfer {
+    .transfer_container {
+      .title {
+        margin-left: 0;
+      }
+
+      .content {
+        margin-left: 0;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 12px;
+
+        .leftSide {
+          .plane.active {
+            &::after {
+              font-size: 14px;
+              right: -30%;
+            }
+          }
+
+          .train.active {
+            &::after {
+              font-size: 14px;
+              right: -30%;
+            }
+          }
+
+          .bus.active {
+            &::after {
+              font-size: 14px;
+              right: -30%;
+            }
+          }
+
+          .taxi.active {
+            &::after {
+              font-size: 14px;
+              right: -40%;
+            }
+          }
+        }
+
+        .rightSide {
+          width: 70%;
+
+          .tabContent {
+            .textarea {
+              h4 {
+                &::before {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sitemap {
+    .container {
+      width: 90%;
+      margin: 30px auto;
+
+      .leftSide {
+        width: 50%;
+        .link {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      .rightSide {
+        width: 50%;
+
+        .info {
+          width: 100%;
+          .row {
+            .address {
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 28px;
+    text-shadow: 0.05em 0.05em 0.2em rgb(21, 34, 46);
+  }
+
+  h2 {
+    font-size: 22px;
+    font-family: "微軟正黑體";
+    font-weight: 400;
+    background-color: rgb(245, 199, 169);
+    color: white;
+    padding: 12px 60px 12px 30px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0px 60px 30px;
+      border-color: transparent transparent white transparent;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .container {
+    .backImg {
+      #banner {
+        .title {
+          top: 50%;
+          left: 45%;
+          transform: translate(-50%, -50%);
+
+          h3 {
+            color: rgb(21, 34, 46);
+            &::after {
+              width: 40px;
+              height: 40px;
+              top: unset;
+              bottom: 110%;
+            }
+          }
+        }
+      }
+
+      #intro {
+        .img {
+          display: none;
+        }
+        article {
+          width: 100%;
+          margin-top: 15%;
+          .webText {
+            display: none;
+          }
+
+          .mobileText {
+            display: unset;
+          }
+        }
+      }
+    }
+  }
+
+  #hotSpot {
+    .container {
+      .imgContent {
+        .img {
+          .circle {
+            border-radius: unset;
+            border-color: rgba(255, 255, 255, 0.445);
+            height: 150px;
+            width: 300px;
+            .text {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #food {
+    .container {
+      .title {
+        text-align: left;
+        margin: 0;
+      }
+      .foodContent {
+        overflow: hidden;
+        .leftSide {
+          display: none;
+        }
+        .rightSide {
+          width: 100%;
+          margin-top: 0px;
+
+          .items {
+            .item {
+              transform: translateX(-30px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #hostle {
+    .hostle_container {
+      margin-bottom: 0;
+      .title {
+        text-align: left;
+        margin: 0;
+        margin-top: 50px;
+
+        h2 {
+          background-color: rgb(171, 196, 140);
+        }
+      }
+
+      .hostleContent {
+        overflow: hidden;
+        height: auto;
+
+        .leftSide {
+          width: 100%;
+          margin-top: 0px;
+
+          .items_hostle {
+            .item {
+              transform: translateX(-30px);
+            }
+          }
+        }
+
+        .rightSide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #transfer {
+    .transfer_container {
+      background-color: unset;
+      .title {
+        text-align: left;
+        margin: 0;
+
+        h2 {
+          background-color: #0a6180;
+        }
+      }
+
+      .content {
+        display: unset;
+        font-size: 16px;
+        .leftSide {
+          width: 100%;
+          display: flex;
+          flex-flow: wrap;
+
+          .tab{
+            margin: 0;
+            height: 150px;
+          }
+
+          .plane{
+            background-color: #0a6180;
+            position: relative;
+
+            i{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .plane.active{
+            transform: unset;
+            &::after{
+              display: none;
+            }
+          }
+
+          .train{
+            background-color: #0a6180b4;
+            position: relative;
+
+            i{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .train.active{
+            transform: unset;
+            &::after{
+              display: none;
+            }
+          }
+
+          .bus{
+            background-color: #0a6180b4;
+            position: relative;
+
+            i{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .bus.active{
+            transform: unset;
+            &::after{
+              display: none;
+            }
+          }
+
+          .taxi{
+            background-color: #0a6180;
+            position: relative;
+
+            i{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .taxi.active{
+            transform: unset;
+            &::after{
+              display: none;
+            }
+          }
+        }
+        .rightSide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #sitemap {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .title{
+      display: unset;
+      
+
+      h2 {
+        background-color: #0a6180;
+      }
+    }
+    .container {
+      height: auto;
+      width: 80%;
+      display: unset;
+
+      .leftSide{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        .link{
+          text-align: unset;
+          width: 100%;
+          .row{
+            width: fit-content;
+            margin: auto;
+          }
+        }
+      }
+
+      .rightSide {
+        width: 90%;
+        margin: auto;
+        .info {
+          .row {
+            .address{
+              padding: 10px 15px;
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+          .socialmedia {
+            padding: 10px;
+            .fab {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    p{
+      padding: 10px;
+    }
   }
 }

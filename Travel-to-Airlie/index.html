@@ -17,57 +17,85 @@
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+
   </head>
 
   <body>
     <!-- navBar -->
     <div class="navBar">
       <div class="menu">
-        <button class="menu-toggle"></button>
-        <!-- <div class="menuText"> MENU</div> -->
-        <nav>
-          <ul class="menu">
-            <a href="#"><li data-text="Home"></li></a>
-            <li data-text="Projects">Projects</li>
-            <li data-text="About">About</li>
-            <li data-text="Contact">Contact</li>
-          </ul>
-        </nav>
+          <div class="menu-toggle"></div>
+          <!-- <div class="menuText">MENU</div> -->
+          <nav>
+              
+              <ul class="menu">
+                  <p>MENU</p>
+                  <a href="#intro"><li>說說艾爾利</li></a>
+
+                  <div class="toggle_group">
+                    <a href="#hotSpot" class="hotSpot_toggle_button"><li>推推景點</li></a>
+                  <ul class="hotSpot_toggle">
+                      <a href="./whitehaven.html"><li>夢幻沙灘</li></a>
+                      <a href="./heartreef.html"><li>瑰寶之心</li></a>
+                      <a href="./GBR.html"><li>海洋森林</li></a>
+                  </ul>
+              </div>
+
+                  <div class="toggle_group">
+                  <a href="#activity"  class="hotSpot_toggle_button" ><li>玩玩活動</li></a>
+                  <ul class="hotSpot_toggle">
+                      <a href="#allActivity"><li>觀光飛機</li></a>
+                      <a href="#activity"><li>遊船</li></a>
+                      <a href="#activity"><li>帆船</li></a>
+                      <a href="#activity"><li>跳傘</li></a>
+                      <a href="#activity"><li>水上摩托</li></a>
+                      <a href="#activity"><li>潛水</li></a>
+                  </ul>  
+                  </div>
+
+                  <a href="#food"><li>吃吃美食</li></a>
+                  <a href="#hostle"><li>睡睡旅宿</li></a>
+                  <a href="#transfer"><li>四通八達</li></a>
+              </ul>
+          </nav>
       </div>
 
       <div class="tips">
-        <ul class="outList">
-          <a href="#hotSpot">
-            <li>
-              1
-              <p>熱門</p>
-              <span class="arrow">></span>
-            </li>
-          </a>
-          <a href="#activity">
-            <li class="even">
-              2
-              <p>先玩</p>
-              <span class="arrow">></span>
-            </li>
-          </a>
-          <a href="#food">
-            <li>
-              3
-              <p>餓了</p>
-              <span class="arrow">></span>
-            </li>
-          </a>
-          <a href="#hostle">
-            <li class="even">
-              4
-              <p>休憩</p>
-              <span class="arrow">></span>
-            </li>
-          </a>
-        </ul>
+          <ul class="outList">
+              <a href="#hotSpot">
+                  <li>
+                      1
+                      <p>熱門</p>
+                      <span class="arrow">></span>
+                  </li>
+              </a>
+              <a href="#activity">
+                  <li class="even">
+                      2
+                      <p>先玩</p>
+                      <span class="arrow">></span>
+                  </li>
+              </a>
+              <a href="#food">
+                  <li>
+                      3
+                      <p>餓了</p>
+                      <span class="arrow">></span>
+                  </li>
+              </a>
+              <a href="#hostle">
+                  <li class="even">
+                      4
+                      <p>休憩</p>
+                      <span class="arrow">></span>
+                  </li>
+              </a>
+          </ul>
       </div>
-    </div>
+  </div>
 
     <!-- Banner -->
 
@@ -91,14 +119,15 @@
             />
           </div>
           <article  data-aos="fade-up"  data-aos-duration="2200">
-            <p>
+            <p class="webText">
               &emsp;&emsp;艾爾利海灘（Airlie
               Beach）座落在沿海美麗的康威國家公園（Conway National
               Park）的沿海地區，為聖靈群島海岸上最大的小鎮，是前往島嶼和大堡礁的主要通道，是一處繁榮的樞紐，提供各種餐飲和夜生活，購物和休閒場所。
             </p>
-            <p>
+            <p class="webText">
               &emsp;&emsp;並且艾爾利海灘所在的聖靈群島，擁有全澳最佳海灘第一名，更是全世界十大最美海灘之一的白天堂沙灘，是極為重要的觀光小鎮，每日都有數以萬計的遊客湧入，就為睹這片沙灘的一面風采。
             </p>
+            <p class="mobileText">艾爾利海灘（Airlie Beach）座落在沿海美麗的康威國家公園（Conway National Park）的沿海地區，為聖靈群島海岸上最大的小鎮，是前往島嶼和大堡礁的主要通，並且艾爾利海灘所在的聖靈群島，擁有全澳最佳海灘第一名，更是全世界十大最美海灘之一的白天堂沙灘，每日都有數以萬計的遊客湧入，就為睹這片沙灘的一面風采。</p>
           </article>
         </section>
       </div>
@@ -285,12 +314,13 @@
         <div class="foodContent">
           <div class="leftSide">
             <div class="arrow">
-              <div class="go goLeft">
+              <div class="go goLeft prev">
                 <img src="./img/goleft.png" alt="" />
               </div>
-              <div class="go goRight">
+              <div class="go goRight next">
                 <img src="./img/goright.png" alt="" />
               </div>
+              <div class="pagination_top"></div>
             </div>
           </div>
           <div class="rightSide">
@@ -300,47 +330,46 @@
                 <div class="textarea">
                   <h4>La Marina</h4>
                   <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <p class="price">AUD 12 - 45</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/restaurant/2949833785.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>La Northerlies</h4>
+                  <p>景觀酒吧</p>
+                  <p class="price">AUD 15 - 60</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/restaurant/1de103b7-4e9d-4fb3-84cf-2a3090ae891e.jpg" alt="" />
                 <div class="textarea">
-                  <h4>Cool La La</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>Fish D’Vine</h4>
+                  <p>海鮮餐廳</p>
+                  <p class="price">AUD 25 - 126</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/restaurant/Mapodoufu.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>Cool La La</h4>
+                  <p>中式餐廳</p>
+                  <p class="price">AUD 10 - 30</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/restaurant/pizza-with-vegetables-on-a-wooden-table-316-small.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>Beagles Pizza</h4>
+                  <p>義式披薩</p>
+                  <p class="price">AUD 20 - 40</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/restaurant/6669957281_9fea036485_o.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>Supermarket</h4>
+                  <p>生鮮超市</p>
                 </div>
               </div>
             </div>
@@ -361,41 +390,49 @@
               <div class="item">
                 <img src="./img/hotel/coral-sea-resort1.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>珊瑚渡假村</h4>
+                  <p>四星級飯店</p>
+                  <p class="price">AUD 180 up</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./img/hotel/d244f0b1f2989e3bbe0d6d1de7e55568.jpg" alt="" />
+                <img src="./img/hotel/11634_17031010500051466885.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>鱷魚俱樂部</h4>
+                  <p>三星級飯店</p>
+                  <p class="price">AUD 90 up</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./img/hotel/2312639529_75280a359a_c.jpg" alt="" />
+                <img src="./img/hotel/9f7073ee79a3f7ba18dba52e6b7032a9.jpeg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>YHA</h4>
+                  <p>青年旅宿</p>
+                  <p class="price">AUD 30 up</p>
                 </div>
               </div>
               <div class="item">
                 <img src="/img/hotel/at-blue-horizon-resort.jpg" alt="" />
                 <div class="textarea">
-                  <h4>Cool La La</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>藍色地平線酒店</h4>
+                  <p>公寓式酒店</p>
+                  <p class="price">AUD 180 up</p>
                 </div>
               </div>
               <div class="item">
                 <img src="./img/hotel/magnums-hotel-from-road.jpg" alt="" />
                 <div class="textarea">
-                  <h4>La Marina</h4>
-                  <p>義式餐廳</p>
-                  <p>AUD 12-45</p>
+                  <h4>夢龍背包客棧</h4>
+                  <p>背包客棧</p>
+                  <p class="price">AUD 25 up</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./img/hotel/Base-Airlie-Beach-Resort.jpg" alt="" />
+                <div class="textarea">
+                  <h4>基地海灘渡假村</h4>
+                  <p>背包客棧</p>
+                  <p class="price">AUD 25 up</p>
                 </div>
               </div>
             
@@ -404,12 +441,13 @@
 
           <div class="rightSide">
             <div class="arrow ">
-              <div class="go goLeft prev">
+              <div class="go goLeft prev_b">
                 <img src="./img/green_left.png" alt="">
               </div>
-              <div class="go goRight next">
+              <div class="go goRight next_b">
                 <img src="./img/green_right.png" alt="">
               </div>
+              <div class="pagination_bottom"></div>
             </div>
           </div>
         </div>
@@ -455,6 +493,7 @@
                   兩者皆可經由布里斯本 Brisbane（BNE）、雪梨
                   Sydney（SYD）、墨爾本 Melborne（MEL）轉國內線航班抵達。
                 </p>
+                
               </div>
             </div>
             <div class="trainText tabContent">
@@ -524,18 +563,21 @@
 
     <!-- Site Map -->
     <section id="sitemap">
+      <div class="title">
+        <h2>網站地圖</h2>
+      </div>
       <div class="container">
         <div class="leftSide">
           <div class="link">
             <div class="row">
-              <a href="#intro">關於</a>&emsp;
-              <a href="#hotSpot">景點</a>&emsp;
-              <a href="">島嶼</a>&emsp;
+              <a href="#intro">關於</a>
+              <a href="#hotSpot">景點</a>
+              <!-- <a href="">島嶼</a> -->
               <a href="#activity">活動</a>
             </div>
             <div class="row">
-              <a href="#food">美食</a>&emsp;
-              <a href="#hostle">住宿</a>&emsp;
+              <a href="#food">美食</a>
+              <a href="#hostle">住宿</a>
               <a href="#transfer">交通</a>
             </div>
           </div>
@@ -544,7 +586,7 @@
           <div class="info">
             <div class="row">
               <div class="logo">
-                <img src="./img/logo.png" alt="" />
+                <img src="./img/logo/TraveltoAirlie_logo.png" alt="" />
               </div>
               <div class="address">
                 <h4>Airlie Beach</h4>
@@ -575,13 +617,15 @@
 
     <!-- Footer -->
     <footer>
-      <p>版權聲明 : 教育用途，請勿盜取作商業使用</p>
+      <p>版權聲明：此網頁僅供108年跨平台互動設計網站前端實作班學習使用。</p>
     </footer>
     
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
     <script src="nav.js"></script>
     <script src="index.js"></script>
   </body>
