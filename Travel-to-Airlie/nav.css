@@ -30,7 +30,7 @@ ul li {
   z-index: 2000;
 }
 
-.navBar .menu button {
+.navBar .menu .menu-toggle {
   opacity: 0.6;
   background-color: transparent;
   position: fixed;
@@ -38,7 +38,7 @@ ul li {
   top: 24px;
   left: 24px;
   border: none;
-  width: 36px;
+  width: 44px;
   height: 30px;
   outline: none;
   -webkit-transition: opacity 0.2s ease-out;
@@ -46,7 +46,7 @@ ul li {
   cursor: pointer;
 }
 
-.navBar .menu button:before {
+.navBar .menu .menu-toggle:before {
   content: "";
   position: absolute;
   top: 0;
@@ -62,7 +62,7 @@ ul li {
   transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
 }
 
-.navBar .menu button:after {
+.navBar .menu .menu-toggle:after {
   opacity: 0;
   content: '×';
   color: white;
@@ -76,25 +76,25 @@ ul li {
   transition: opacity 0.4s ease-out;
 }
 
-.navBar .menu button:active {
+.navBar .menu .menu-toggle:active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-.navBar .menu button:hover {
+.navBar .menu .menu-toggle:hover {
   opacity: 1;
 }
 
-.open .navBar .menu button {
+.open .navBar .menu .menu-toggle {
   opacity: 1;
 }
 
-.open .navBar .menu button:before {
+.open .navBar .menu .menu-toggle:before {
   opacity: 0;
   width: 0;
 }
 
-.open .navBar .menu button:after {
+.open .navBar .menu .menu-toggle:after {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
           transform: translate3d(0, 0, 0) rotate(360deg);
@@ -109,8 +109,8 @@ ul li {
   position: fixed;
   top: -100%;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 100vh;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;

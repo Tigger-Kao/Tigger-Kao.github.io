@@ -46,7 +46,7 @@ ul {
     z-index: 2000;
 
     .menu {
-        button {
+        .menu-toggle {
             opacity: 0.6;
             background-color: transparent;
             position: fixed;
@@ -54,7 +54,7 @@ ul {
             top: 24px;
             left: 24px;
             border: none;
-            width: 36px;
+            width: 44px;
             height: 30px;
             outline: none;
             transition: opacity 0.2s ease-out;
@@ -111,8 +111,8 @@ ul {
             position: fixed;
             top: -100%;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 40%;
+            height: 100vh;
             transform: translate3d(0, 0, 0);
             backface-visibility: hidden;
             overflow: hidden;
