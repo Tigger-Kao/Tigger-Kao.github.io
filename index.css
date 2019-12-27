@@ -486,7 +486,7 @@ body #section5 .footer p b {
   color: whitesmoke;
 }
 
-@media (max-width: 1835px) {
+@media screen and (max-width: 1835px) {
   body #section4 .container_bottom .portfolio .ps .imgbox {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -504,7 +504,7 @@ body #section5 .footer p b {
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 30px;
   }
@@ -525,7 +525,7 @@ body #section5 .footer p b {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 25px;
   }
@@ -535,7 +535,7 @@ body #section5 .footer p b {
   }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
   html body #section1 #container_banner .backGround .skillButton .buttonGroup a .button img {
     width: 50%;
   }

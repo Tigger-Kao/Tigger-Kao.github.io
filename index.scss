@@ -482,7 +482,7 @@ body {
     }
 }
 
-@media (max-width:1835px) {
+@media screen and (max-width:1835px) {
     body #section4 .container_bottom .portfolio .ps .imgbox{
         flex-wrap: wrap;
 
@@ -502,7 +502,7 @@ body {
     }
 }
 
-@media (max-width:1024px) {
+@media screen and (max-width:1024px) {
     html {
         font-size: 30px;
 
@@ -527,7 +527,7 @@ body {
     }
 }
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
     html{
         font-size: 25px;
 
@@ -538,7 +538,7 @@ body {
     }
 }
 
-@media (max-width: 420px){
+@media screen and(max-width: 420px){
     html{
         // h1{
         //     font-size: 1.5rem;
