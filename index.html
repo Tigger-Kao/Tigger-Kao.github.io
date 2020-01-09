@@ -5,276 +5,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>TIGGER KAO</title>
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
-
-    <!-- index css -->
+    <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
 </head>
 
 <body>
-    <section id="section1">
-        <div id="container_banner" onload=runSlideShow>
+    <div class="hamburger-icon" id="icon">
+        <div class="icon-1" id="a"></div>
+        <div class="icon-2" id="b"></div>
+        <div class="icon-3" id="c"></div>
+        <div class="clear"></div>
+    </div>
 
-            <div class="backGround">
-                <div class="title">
-                    <h1 class="myName">TIGGER KAO
-                        <a href="slideshow.html"><img src="./img/home.svg" alt="" width="100px"></a>
-                    </h1>
-                    <h3 class="annoation">PHOTOGRAPHER / DESIGNER / EXPLORER / CHANLLENGER</h3>
-                </div>
+    <nav id="nav">
 
-                <div class="skillButton">
-                    <div class="buttonGroup">
-                        <a href="#ps">
-                            <div class="button">
-                                <img src="./img/optimize.svg" alt="">
-                                <h3>PHOTOSHOP</h3>
-                            </div>
-                        </a>
-                        <a href="#photos">
-                            <div class="button">
-                                <img src="./img/camera.svg" alt="">
-                                <h3>PHOTOS</h3>
-                            </div>
-                        </a>
-                        <a href="#commercial" class="">
-                            <div class="button">
-                                <img src="./img/digital-painting.svg" alt="">
-                                <h3>COMMERCIAL</h3>
-                            </div>
-                        </a>
-                        <a href="#section4" class="">
-                            <div class="button">
-                                <img src="./img/browser.svg" alt="">
-                                <h3>RWD</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="myPhoto">
-                    <img src="./img/IMG_5316拷貝.jpg" alt="">
+        <div class="row">
+            <div class="col social">
+                <!-- <h2>follow</h2> -->
+                <div class="links">
+                    <a href="https://www.facebook.com/profile.php?id=100000154058235"><i class="fab fa-facebook-square white"></i></a>
+                    <a href="https://www.instagram.com/tea411139/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Tigger-Kao"><i class="fab fa-github-square"></i></a>
+                    <a href="mailto:tea411139@hotmail.com"><i class="fas fa-envelope-square"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="section2">
-        <div class="container_body">
-            <div class="leftSide">
-                <div class="skillBar">
-                    <h2>COMPUTER SKILL</h2>
-                    <ul class="skill-list">
-                        <li class="skill">
-                            <h3>Photoshop</h3>
-                            <progress class="skill-1" max="100" value="80">
-                                <strong>Skill Level: 80%</strong>
-                            </progress>
-                        </li>
-                        <li class="skill">
-                            <h3>Lightroom</h3>
-                            <progress class="skill-2" max="100" value="80">
-                                <strong>Skill Level: 80%</strong>
-                            </progress>
-                        </li>
-                        <li class="skill">
-                            <h3>Illastrator</h3>
-                            <progress class="skill-3" max="100" value="60">
-                                <strong>Skill Level: 60%</strong>
-                            </progress>
-                        </li>
-                        <li class="skill">
-                            <h3>HTML5</h3>
-                            <progress class="skill-4" max="100" value="40">
-                                <strong>Skill Level: 40%</strong>
-                            </progress>
-                        </li>
-                        <li class="skill">
-                            <h3>CSS3</h3>
-                            <progress class="skill-5" max="100" value="35">
-                                <strong>Skill Level: 35%</strong>
-                            </progress>
-                        </li>
-                        <li class="skill">
-                            <h3>Javascript</h3>
-                            <progress class="skill-6" max="100" value="25">
-                                <strong>Skill Level: 25%</strong>
-                            </progress>
-                        </li>
-                    </ul>
+            <a href="#web" class="col menu_btn">
+                <h2 class="zh zh_web">網頁設計</h2>
+                <div class="img">
+                    <img src="./img/man_web.svg" alt="">
                 </div>
-                <div class="language">
-
-                </div>
-            </div>
-            <div class="rightSide">
-                <div class="experience">
-                    <div class="title">
-                        <h2>EXPERIENCE</h2>
-                    </div>
-                    <div class="workEx">
-                        <div class="smallTitle etitle">
-                            <h3>婚禮攝影師</h3>
-                            <p>Wedding Photographer</p>
-                        </div>
-                        <p class="date">2012 / 11 ~ 2017 / 04</p>
-                    </div>
-
-                    <div class="title">
-                        <h2>EDUCATION</h2>
-                    </div>
-                    <div class="workEx">
-                        <div class="smallTitle etitle">
-                            <h3>國立臺中科技大學</h3>
-                            <p>商業設計系</p>
-                        </div>
-                        <p class="date">2008 / 09 ~ 2012 / 06</p>
-                    </div>
-
-                    <div class="title">
-                        <h2>LANGUAGE</h2>
-                    </div>
-                    <div class="workEx">
-                        <div class="smallTitle">
-                            <ul>
-                                <li>中文： 聽-精通、說-精通、讀-精通、寫-精通</li>
-                                <li>台語： 聽-普通、說-普通</li>
-                                <li>英文： 聽-普通、說-普通、讀-普通、寫-略通</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h2>OTHERS</h2>
-                    </div>
-                    <div class="workEx">
-                        <div class="smallTitle">
-                            <p>Git&emsp;/&emsp;Wireframe&emsp;/&emsp;手(電)繪</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-    </section>
-
-    <section id="section3">
-        <div class="container_middle">
-            <div class="backImg">
-            </div>
-        </div>
-    </section>
-
-    <section id="section4">
-        <div class="container_bottom">
-            <div class="portfolio">
-                <div class="rwd">
-                    <div class="title">
-                        <h1>RWD DESIGN</h1>
-                    </div>
-                    <div class="imgWeb">
-                        <img src="./img/01-首頁.jpg" alt="">
-                    </div>
-                    <div class="imgPhone">
-                        <img src="./img/01-首頁拷貝.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="commercial" id="commercial">
-                    <div class="title">
-                        <h1>COMMERCIAL DESIGN</h1>
-                    </div>
-                    <div class="img">
-                        <img src="./img/2019-10-04-美食-名片橫式-Mockup-1-最終完稿.jpg" alt="">
-                    </div>
-                    <div class="img">
-                        <img src="./img/2019-10-04-美食-名片直式-Mockup-1-最終完稿.jpg" alt="">
-                    </div>
-                    <div class="img">
-                        <img src="./img/2019-10-15-DM-武陵農場-Mockup-最終完稿.jpg" alt="">
-                    </div>
-                    <div class="img">
-                        <img src="./img/2019-10-08-換位名片-橫式-Mockup-最終完稿.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="photos" id="photos">
-                    <div class="title">
-                        <h1>PHOTOS</h1>
-                    </div>
-                    <div class="photoContainer">
-                        <div class="img">
-                            <img src="./img/S__9510917.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/IMG_9208.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/IMG_6008.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/IMG_5633.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/IMG_4653.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/S__9494538.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/S__9510920.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/S__9510921.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/S__9510922.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ps" id="ps">
-                    <div class="title">
-                        <h1>PHOTOSHOP</h1>
-                    </div>
-                    <div class="imgbox">
-                        <div class="imgT">
-                            <img src="./img/2019-10-02-PS fantasy-2.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/TAIWAN.jpg" alt="">
-                        </div>
-                        <div class="img">
-                            <img src="./img/london.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="section5">
-        <div class="footer">
-            <p>PHONE: 0902-325-261</p>
-            <a href="#section1">
-                <p><b>TIGGER</b></p>
             </a>
-            <p>EMAIL: tea411139@hotmail.com</p>
+            <a href="#cd" class="col menu_btn">
+                <h2 class="zh zh_cd">商業設計</h2>
+                <div class="img">
+                    <img src="./img/man_cd.svg" alt="">
+                </div>
+            </a>
+            <a href="#photos" class="col menu_btn">
+                <h2 class="zh zh_photos">專業攝影</h2>
+                <div class="img photos">
+                    <img src="./img/man_photos.svg" alt="">
+                </div>
+            </a>
+            <a href="#mp" class="col menu_btn">
+                <h2 class="zh zh_mp">影像合成</h2>
+                <div class="img">
+                    <img src="./img/man_mp.svg" alt="">
+                </div>
+            </a>
+        </div>
+
+    </nav>
+
+    <section id="banner">
+        <div class="mask">
+            <div class="img"></div>
         </div>
     </section>
 
-    <!-- rem -->
-    <script type="text/javascript">
-        var html = document.querySelector('html');
-        var rem = html.offsetWidth / 26;
-        html.style.fontSize = rem + "px";
-    </script>
+    <section id="info">
+        <div class="container">
+            <div class="title">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="textarea">
+                <h4>2012 / 06 畢業於國立臺中科技大學－商業設計系</h4>
+                <h4>2012 ~ 2017 婚紗婚禮攝影從業五年 － 婚禮紀錄、婚紗、孕婦照、兒童攝影等拍攝工作</h4>
+                <h4>2017 ~ 2019 澳洲打工度假 － 船上中文翻譯員、潛水員等經歷</h4>
+            </div>
+            <div class="title">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="content">
+                <div class="skillbar">
+                    <h4>photoshop</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>illastrator</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>lightrrom</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>html5</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>css3</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>java script</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skillbar">
+                    <h4>jquery</h4>
+                    <div class="skill">
+                        <div class="level" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- index js -->
-    <!-- <script src="./index.js"></script> -->
+    </section>
+
+    <section id="middle_buttons">
+        <div class="title">
+            <h1>MORE</h1>
+            <p>Click Bellowing Buttons <i class="fas fa-angle-double-down"></i></p>
+        </div>
+        <div class="container">
+            <div class="buttons">
+                <div class="m_button w"></div>
+                <div class="m_button c"></div>
+                <div class="m_button p"></div>
+                <div class="m_button m"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web" class="section">
+        <div class="container_1 website active">
+            <div class="title">
+                <h1>WEB DESIGN</h1>
+            </div>
+            <div class="bgimg">
+                <img src="./img/splashback.png" alt="">
+            </div>
+            <div class="content">
+                <div class="leftzone">
+                    <div class="imgzone">
+                        <div class="img tab active">
+                            <img src="./img/01-首頁_cut.jpg" alt="">
+                        </div>
+                        <div class="img mobile tab">
+                            <img src="./img/04-有神麼事.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="button web_button active">
+                            <i class=" far fa-window-maximize"></i>
+                        </div>
+                        <div class="button mobile_button">
+                            <i class=" fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightzone">
+                    <div class="second_title">
+                        <a href="https://givemeatemple.github.io/" class="second_title_L">
+                            <h1>給我一個TEMPLE <i class="fas fa-external-link-alt"></i></h1>
+                        </a>
+                        <a href="https://github.com/givemeatemple/givemeatemple.github.io" class="second_title_R">
+                            <h3>GitHub <i class="fab fa-github fa-2x"></i></h3>
+                        </a>
+                    </div>
+                    <h3>Bootstrap框架、RWD網站、SCSS、JQuery、AnimateJS、AOS</h3>
+                    <p>台灣人喜歡求神問卜，感情不順要拜拜、事業發達要拜拜、學業進步要拜拜、招財進寶也要拜拜，此網站把全台最著名的宮廟分門別類，並且依照不同地區做介紹，看病需要依科掛診，求神也一樣，如此方便的系統讓你不再為拜拜而煩惱！
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_2 website">
+            <div class="title">
+                <h1>WEB DESIGN</h1>
+            </div>
+            <div class="content">
+                <div class="leftzone">
+                    <div class="imgzone">
+                        <div class="img tab2 active">
+                            <img src="./img/airlieweb_cut.jpg" alt="">
+                        </div>
+                        <div class="img mobile tab2">
+                            <img src="./img/airliemobile_cut.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="button2 web_button active">
+                            <i class=" far fa-window-maximize"></i>
+                        </div>
+                        <div class="button2 mobile_button">
+                            <i class=" fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightzone">
+                    <div class="bgimg">
+                        <img src="./img/logoback.png" alt="">
+                    </div>
+                    <div class="second_title">
+                        <a href="https://tigger-kao.github.io/Travel-to-Airlie/" class="second_title_L">
+                            <h1>來去艾爾利小旅行 <i class="fas fa-external-link-alt"></i></h1>
+                        </a>
+                        <a href="https://github.com/Tigger-Kao/Travel-to-Airlie" class="second_title_R">
+                            <h3>GitHub <i class="fab fa-github fa-2x"></i></h3>
+                        </a>
+                    </div>
+                    <h3>RWD網站、SCSS、JQuery、Slick、AOS</h3>
+                    <p>艾爾利 ( Airlie ) 為澳洲著名的白沙灘 ( Whitehaven Beach )
+                        的本島出發地，四周還有世界盛名的大堡礁環繞，更且位於大堡礁的中心，還有「大堡礁之心」的美稱。在艾爾利你可以選擇喜歡的活動方式來享受這片宜人的風景，這個網站的目的就是推廣艾爾利，讓更多喜歡大海沙灘的人，知曉這個地方，並且擁有方便的資訊讓使用者可以滿足他們的各方需求
+                        ( 食、衣、住、行等資訊 )。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pages">
+            <div class="webpage active">1</div>
+            <div class="webpage">2</div>
+        </div>
+    </section>
+
+    <section id="cd" class="section">
+        <div class="container_cd">
+            <div class="title">
+                <h1>COMMERCIAL DESIGN</h1>
+            </div>
+            <div class="heathrow-images-for-lightbox">
+                <div class="slider">
+                    <div>
+                        <a href="./img/2019-10-04-美食-名片直式-Mockup-1-最終完稿.jpg" class="image gallery-item">
+                            <img src="./img/2019-10-04-美食-名片直式-Mockup-1-最終完稿.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./img/2019-10-04-美食-名片橫式-Mockup-1-最終完稿.jpg" class="image gallery-item">
+                            <img src="./img/2019-10-04-美食-名片橫式-Mockup-1-最終完稿.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./img/2019-10-08-換位名片-橫式-Mockup-最終完稿.jpg" class="image gallery-item">
+                            <img src="./img/2019-10-08-換位名片-橫式-Mockup-最終完稿.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./img/2019-10-15-DM-武陵農場-Mockup-最終完稿.jpg" class="image gallery-item">
+                            <img src="./img/2019-10-15-DM-武陵農場-Mockup-最終完稿.jpg" alt="">
+                        </a>
+                    </div>
+                </div> <!-- end slider -->
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <span class="slider__label sr-only"></span>
+                </div>
+            </div> <!-- end content -->
+        </div>
+
+    </section>
+
+    <section id="photos" class="section">
+        <div class="container_photos">
+            <div class="title">
+                <h1>PROFESSIONAL PHOTOS</h1>
+            </div>
+            <div class="items">
+                <a href="./img/S__9510922.jpg" class="item">
+                    <img src="./img/S__9510922.jpg" alt="">
+                </a>
+                <a href="./img/S__9510921.jpg" class="item">
+                    <img src="./img/S__9510921.jpg" alt="">
+                </a>
+                <a href="./img/S__9510920.jpg" class="item">
+                    <img src="./img/S__9510920.jpg" alt="">
+                </a>
+                <a href="./img/S__9510918.jpg" class="item">
+                    <img src="./img/S__9510918.jpg" alt="">
+                </a>
+                <a href="./img/S__9510916.jpg" class="item">
+                    <img src="./img/S__9510916.jpg" alt="">
+                </a>
+                <a href="./img/IMG_1827.jpg" class="item">
+                    <img src="./img/IMG_1827.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mp" class="section">
+        <div class="container_mp">
+            <div class="title">
+                <h1>MATTE PAINTING</h1>
+            </div>
+            <div class="row">
+                <div class="col_w">
+                    <img src="./img/2019-10-02-PS fantasy-2.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./img/TAIWAN.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./img/london.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

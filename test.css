@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+body .content {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: cadetblue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px black;
+          box-shadow: 0 20px 50px black;
+}
+
+body .content .skillbar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+
+body .content .skillbar p {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+body .content .skillbar .skill {
+  background-color: #00687a;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #0fffb7;
+  border-radius: 2px;
+}
+
+body .content .skillbar .skill .level {
+  background-color: #0fffb7;
+  width: 100%;
+  height: 10px;
+}
+/*# sourceMappingURL=test.css.map */
