@@ -1112,7 +1112,6 @@ nav.show {
   }
   .section .pages {
     position: absolute;
-    bottom: -8%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
