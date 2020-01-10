@@ -844,6 +844,12 @@ nav.show {
   display: block;
 }
 
+.section {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
 .section .container_cd {
   width: 100%;
   height: auto;
@@ -997,6 +1003,7 @@ nav.show {
 
 .active {
   display: block;
+  height: auto;
 }
 
 @media screen and (max-width: 1024px) {
