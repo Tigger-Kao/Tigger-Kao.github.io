@@ -998,4 +998,150 @@ nav.show {
 .active {
   display: block;
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  #banner {
+    background-position-x: right;
+  }
+  #banner .mask {
+    background-position-x: right;
+  }
+  #banner .mask .img {
+    background-position-x: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #info .container .textarea {
+    width: 80%;
+  }
+  #info .container .content {
+    width: 80%;
+  }
+  .section .container_1 .content {
+    width: 80%;
+  }
+  .section .container_1 .content .rightzone .second_title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section .container_photos .items {
+    width: 80%;
+  }
+  .section .container_mp .row {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #banner .mask .img {
+    background-position-y: 50%;
+    background-attachment: unset;
+  }
+  #info .container .content .skillbar h4 {
+    width: 50%;
+    letter-spacing: unset;
+  }
+  #middle_buttons .title {
+    margin: 20px auto;
+  }
+  #middle_buttons .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .section .container_1 {
+    margin-top: 50px;
+  }
+  .section .container_1 .title {
+    margin-bottom: 20px;
+  }
+  .section .container_1 .content {
+    display: unset;
+  }
+  .section .container_1 .content .leftzone {
+    width: 80%;
+    margin: auto;
+  }
+  .section .container_1 .content .rightzone {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .section .container_2 {
+    margin-top: 50px;
+  }
+  .section .container_2 .title {
+    margin-bottom: 20px;
+  }
+  .section .container_2 .content {
+    display: unset;
+  }
+  .section .container_2 .content .leftzone {
+    width: 80%;
+    margin: auto;
+  }
+  .section .container_2 .content .rightzone {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .section .pages {
+    position: absolute;
+    bottom: -8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section .pages .webpage {
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: whitesmoke;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .section .pages .webpage.active {
+    background-color: black;
+  }
+  .section .container_cd {
+    margin-top: 50px;
+  }
+  .section .container_photos {
+    margin-top: 50px;
+  }
+  .section .container_photos .title {
+    margin-bottom: 20px;
+  }
+  .section .container_photos .items .item {
+    width: 50%;
+  }
+  .section .container_mp {
+    margin-top: 50px;
+  }
+  .section .container_mp .title {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
