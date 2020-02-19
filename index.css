@@ -577,7 +577,7 @@ nav.show {
 }
 
 .section .container_1 .content .leftzone .buttons .button.active * {
-  color: #AA4C4C;
+  color: #427f97;
 }
 
 .section .container_1 .content .rightzone {
@@ -610,17 +610,17 @@ nav.show {
 }
 
 .section .container_1 .content .rightzone .second_title h1:hover {
-  color: #AA4C4C;
+  color: #427f97;
 }
 
 .section .container_1 .content .rightzone .second_title h1:hover * {
-  color: #AA4C4C;
+  color: #427f97;
 }
 
 .section .container_1 .content .rightzone .second_title h1:hover::after {
   content: "";
   width: 100%;
-  background-color: #AA4C4C;
+  background-color: #427f97;
 }
 
 .section .container_1 .content .rightzone .second_title h3 {
@@ -727,7 +727,7 @@ nav.show {
 }
 
 .section .container_2 .content .leftzone .buttons .button2.active * {
-  color: #427f97;
+  color: #AA4C4C;
 }
 
 .section .container_2 .content .rightzone {
@@ -739,6 +739,8 @@ nav.show {
   z-index: -1;
   position: absolute;
   width: 100%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .section .container_2 .content .rightzone .bgimg img {
@@ -771,17 +773,17 @@ nav.show {
 }
 
 .section .container_2 .content .rightzone .second_title h1:hover {
-  color: #427f97;
+  color: #AA4C4C;
 }
 
 .section .container_2 .content .rightzone .second_title h1:hover * {
-  color: #427f97;
+  color: #AA4C4C;
 }
 
 .section .container_2 .content .rightzone .second_title h1:hover::after {
   content: "";
   width: 100%;
-  background-color: #427f97;
+  background-color: #AA4C4C;
 }
 
 .section .container_2 .content .rightzone .second_title h3 {
@@ -1025,28 +1027,6 @@ nav.show {
 }
 
 @media screen and (max-width: 768px) {
-  #info .container .textarea {
-    width: 80%;
-  }
-  #info .container .content {
-    width: 80%;
-  }
-  .section .container_1 .content {
-    width: 80%;
-  }
-  .section .container_1 .content .rightzone .second_title {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .section .container_photos .items {
-    width: 80%;
-  }
-  .section .container_mp .row {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   h1 {
     font-size: 20px;
   }
